@@ -43,7 +43,7 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section className="relative w-full overflow-hidden bg-white py-16  bg-center bg-no-repeat" style={{ backgroundImage: "url('/irccpakistan/faq.png')" }}>
+    <section className="relative w-full overflow-hidden bg-white py-16  bg-center bg-no-repeat" style={{ backgroundImage: "url('/faq.png')" }}>
       {/* soft wave background */}
       {/* <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-28 top-44 h-72 w-[520px] rounded-[999px] bg-[#0E58A8]/6 blur-[1px]" />

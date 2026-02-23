@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function UterineFibroidsSection() {
   return (
-    <section className="bg-[#ffffff] py-16 px-4 bg-center bg-no-repeat" style={{ backgroundImage: "url('/irccpakistan/faq.png')" }}>
+    <section className="bg-[#ffffff] py-16 px-4 bg-center bg-no-repeat" style={{ backgroundImage: "url('/faq.png')" }}>
       <div className="max-w-full mx-auto text-center">
         
         {/* Heading */}

@@ -23,7 +23,7 @@ export default function Problem() {
         className="absolute inset-0 w-full h-full object-cover"
       >
         {/* rename file to banner-cand.mp4 and keep in /public */}
-        <source src="/irccpakistan/banner-cand.mp4" type="video/mp4" />
+        <source src="/banner-cand.mp4" type="video/mp4" />
       </video>
 
       {/* Blue Overlay */}

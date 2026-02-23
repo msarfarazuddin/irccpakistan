@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import basePath from "@/app/lib/basePath";
 
 type Suggestion = {
   id: string;
@@ -24,7 +23,7 @@ export default function SearchSection() {
 
   // ✅ CHANGE THIS when your API is ready
   const MIN_QUERY_LENGTH = 2;
-  const API_URL = `${basePath}/api/search`;
+  const API_URL = "/api/search";
 
   const canSearch = q.trim().length >= MIN_QUERY_LENGTH;
 
@@ -123,7 +122,7 @@ export default function SearchSection() {
       {/* Background */}
       <div
         className="absolute inset-0 bg-[#0E58A8] bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/irccpakistan/bg.png')" }}
+        style={{ backgroundImage: "url('/bg.png')" }}
       />
       <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.25),transparent_40%),radial-gradient(circle_at_80%_50%,rgba(255,255,255,0.18),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(255,255,255,0.16),transparent_45%)]" />
       <div className="absolute inset-0 opacity-15 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.25)_20%,transparent_40%,rgba(255,255,255,0.18)_60%,transparent_80%)]" />

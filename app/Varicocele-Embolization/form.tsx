@@ -1,7 +1,5 @@
 "use client";
 
-import basePath from "@/app/lib/basePath";
-
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -37,7 +35,7 @@ export default function ConsultationSection() {
     setError("");
 
     try {
-      const res = await fetch(`${basePath}/api/consultation`, {
+      const res = await fetch("/api/consultation", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

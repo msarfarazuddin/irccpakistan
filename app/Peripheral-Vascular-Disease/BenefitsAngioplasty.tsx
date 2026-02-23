@@ -31,7 +31,7 @@ export default function FibroidSymptomsSection() {
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
-                <source src="/irccpakistan/banner cand.mp4" type="video/mp4" />
+                <source src="/banner cand.mp4" type="video/mp4" />
             </video>
 
             {/* Blue Overlay */}

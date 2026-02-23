@@ -60,7 +60,7 @@ export default function HeroSection() {
             rgba(231, 238, 252, 0.29),
             rgb(231, 238, 252)
           ),
-          url('/irccpakistan/bannermain.png')`,
+          url('/bannermain.png')`,
         }}
       >
         <div className="mobilecss mx-auto grid w-full max-w-full grid-cols-1 gap-10 bg-white/0 pb-0 lg:pb-0 pt-40  sm:px-10 lg:grid-cols-12">
