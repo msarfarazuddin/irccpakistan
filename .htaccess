@@ -1,0 +1,21 @@
+# ──────────────────────────────────────────────────────────────────────
+# .htaccess – cPanel / Passenger reverse-proxy rules
+# Place in the document root that cPanel's Node.js App points to.
+# The app is served under /irccpakistan subdirectory.
+# ──────────────────────────────────────────────────────────────────────
+
+# Disable directory listing
+Options -Indexes
+
+# Enable mod_rewrite
+RewriteEngine On
+
+# Let Passenger handle everything
+PassengerEnabled On
+PassengerAppType node
+PassengerStartupFile app.js
+PassengerBaseURI /irccpakistan
+
+# Force HTTPS (uncomment when SSL is active)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

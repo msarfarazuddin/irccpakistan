@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-neue-montreal), var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+
+h4,
+h5,
+h6,
+button,
+input,
+label,
+select,
+textarea,
+p,
+a,
+li {
+  font-weight: 500;
+}
+
+
+.bannerstyle.relative.min-h-screen.w-full.bg-cover.bg-center.bg-no-repeat {
+    margin-top: -100px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .mobilecss{
+    padding-top: 80px;
+    padding-bottom: 380px;
+}
+
+.bannerimag {
+    max-width: 280px;
+}
+
+.bannbutton {
+    font-size: 14px;
+}
+
+h2.pricesize {
+    font-size: 35px;
+}
+
+.paddingl {
+    padding-left: 0px;
+}
+
+.aboutlogo {
+    gap: 0px;
+}
+
+.contpadding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mobilew {
+    width: 230px !important;
+}
+
+}
