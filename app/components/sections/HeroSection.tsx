@@ -46,7 +46,7 @@ const socialLinks = [
 
 const stats = [
   { label: "SPECIALTIES", value: "30+" },
-  { label: "YEARS EXPERIENCE", value: "20+" },
+  { label: "YEARS EXPERIENCE", value: "25+" },
   { label: "SUCCESSFUL PROCEDURES", value: "250k" },
 ];
 

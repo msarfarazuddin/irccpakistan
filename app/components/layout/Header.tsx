@@ -36,7 +36,7 @@ const navLinks: NavLink[] = [
   { label: "Contact Us", href: "/Contact" },
 ];
 
-const contactNumbers = ["03324520052", "03310232883", "03310232883"];
+const contactNumbers = ["03324520052", "03310232883", "03340005020"];
 
 const chunk = <T,>(arr: T[], size: number) => {
   const out: T[][] = [];
@@ -181,8 +181,10 @@ export default function Header() {
           {/* Numbers */}
           <div className="hidden items-center gap-2 text-[16px] font-semibold text-[#1d2a50] xl:flex">
             {contactNumbers.map((n, i) => (
-              <span key={`${n}-${i}`}>
-                {n}
+              <span key={`${n}-${i}`} className="flex items-center">
+                <a href={`tel:${n}`} className="hover:underline">
+                  {n}
+                </a>
                 {i < contactNumbers.length - 1 && (
                   <span className="mx-2 text-[#111111]">|</span>
                 )}

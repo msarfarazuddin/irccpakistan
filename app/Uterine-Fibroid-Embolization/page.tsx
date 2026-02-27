@@ -16,12 +16,12 @@ export default function Ufe() {
       <UFEinfo/>
       <Fibro/>
       <FibroSymtoms/>
-      <Consultant/>
+      <Candidate/>
+      <Benifits/>
+       <Consultant/>
       <section className="pt-20  bg-white">
       <Testimonial/>
       </section>
-      <Candidate/>
-      <Benifits/>
       <Search/>
       <Blog/>
     </>

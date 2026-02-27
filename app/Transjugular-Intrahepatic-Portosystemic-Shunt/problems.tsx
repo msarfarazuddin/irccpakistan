@@ -22,7 +22,6 @@ export default function Problem() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        {/* rename file to banner-cand.mp4 and keep in /public */}
         <source src="/banner-cand.mp4" type="video/mp4" />
       </video>
 

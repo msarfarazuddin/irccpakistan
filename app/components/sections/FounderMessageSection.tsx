@@ -9,7 +9,7 @@ const VIDEO_ID = "YfJaUm8R-B0";
 export default function FounderMessageSection() {
     const [play, setPlay] = useState(false);
 
-    const thumb = `https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`;
+    const thumb = `https://img.youtube.com/vi/${VIDEO_ID}/hqdefault.jpg`;
     const embed = `https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=0&rel=0&modestbranding=1`;
 
     return (
@@ -75,7 +75,7 @@ export default function FounderMessageSection() {
                             </div>
                         </button>
                     ) : (
-                        <div className="relative w-full h-[260px] sm:h-[320px] lg:h-full bg-black">
+                        <div className="relative w-full h-[260px] sm:h-[320px] lg:h-full bg-[#0E58A8]">
                             <iframe
                                 className="absolute inset-0 w-full h-full"
                                 src={embed}

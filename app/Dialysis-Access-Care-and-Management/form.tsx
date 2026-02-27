@@ -76,7 +76,7 @@ export default function ConsultationSection() {
           If you’re facing{" "}
           <span className="text-[#0E58A8] font-bold">Uterine Fibroids,</span>{" "}
           contact us now for <br className="hidden md:block" />
-          free online consultation
+           online consultation
         </h4>
 
         {/* Form */}

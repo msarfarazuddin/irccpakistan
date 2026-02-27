@@ -116,7 +116,7 @@ export default function AboutSection() {
 
                     {/* Right Video Slider */}
                     <div className="lg:col-span-4">
-                        <div className="overflow-hidden rounded-2xl border border-[#e2e5eb] bg-black shadow-sm">
+                        <div className="overflow-hidden rounded-2xl border border-[#e2e5eb] bg-[#0E58A8] shadow-sm">
                             <div className="relative aspect-video w-full">
                                 {total > 0 ? (
                                     <>

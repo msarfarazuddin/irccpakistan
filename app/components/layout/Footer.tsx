@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-wrap gap-3">
-          <Pill href="/contact" icon={<PhoneIcon />}>
+          <Pill href="/Contact" icon={<PhoneIcon />}>
             Contact Us
           </Pill>
           <Pill href="mailto:irccpakistan@gmail.com" icon={<MailIcon />}>
@@ -123,20 +123,17 @@ export default function Footer() {
 
         <div className="mt-8 flex flex-col gap-4 border-t border-[#E4F0FF] pt-6 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <SocialIcon href="#" label="YouTube">
+            <SocialIcon href="https://youtu.be/Ppfrn80dfzs" label="YouTube">
               <YouTubeIcon />
             </SocialIcon>
-            <SocialIcon href="#" label="Facebook">
+            <SocialIcon href="https://www.facebook.com/irccpakistan" label="Facebook">
               <FacebookIcon />
             </SocialIcon>
-            <SocialIcon href="#" label="Instagram">
+            <SocialIcon href="https://instagram.com/irccpakistan?igshid=i7fclbk4863y" label="Instagram">
               <InstagramIcon />
             </SocialIcon>
-            <SocialIcon href="#" label="Twitter/X">
+            <SocialIcon href="https://twitter.com/irccpakistan?lang=en" label="Twitter/X">
               <XIcon />
-            </SocialIcon>
-            <SocialIcon href="#" label="TikTok">
-              <TikTokIcon />
             </SocialIcon>
 
             <div className="flex flex-wrap items-left gap-x-6 gap-y-2 text-sm text-[#5B6577]">
@@ -150,7 +147,7 @@ export default function Footer() {
           </div>
 
           <div className="text-sm text-[#0E58A8]">
-            2025 © <span className="font-semibold">IRCC Pakistan</span>. All Rights Reserved.
+            2026 © <span className="font-semibold">IRCC Pakistan</span>. All Rights Reserved.
           </div>
 
           <div className="text-sm text-[#0E58A8]">
@@ -197,13 +194,15 @@ function SocialIcon({
   children: React.ReactNode;
 }) {
   return (
-    <Link
+    <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label={label}
       className="grid h-9 w-9 place-items-center rounded-full bg-white text-[#0E58A8] ring-1 ring-[#E4F0FF] transition hover:-translate-y-0.5"
     >
       <span className="h-4 w-4">{children}</span>
-    </Link>
+    </a>
   );
 }
 
@@ -281,14 +280,6 @@ function XIcon() {
   return (
     <svg viewBox="0 0 24 24" className="h-full w-full" fill="currentColor">
       <path d="M18.3 2H21l-6.6 7.6L22 22h-6l-4.7-6.1L6 22H3l7.1-8.2L2 2h6.1l4.2 5.6L18.3 2zm-1 18h1.7L7.7 4H6L17.3 20z" />
-    </svg>
-  );
-}
-
-function TikTokIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-full w-full" fill="currentColor">
-      <path d="M16 2c.7 2.9 2.7 4.7 5 4.9V10c-1.9-.1-3.5-.7-5-1.8V16c0 3.9-3.2 7-7.1 7-3.9 0-7-3.1-7-7s3.1-7 7-7c.5 0 1 .1 1.5.2V12c-.5-.3-1-.5-1.5-.5-2 0-3.6 1.6-3.6 3.6S7.9 18.7 9.9 18.7 13.5 17 13.5 15V2H16z" />
     </svg>
   );
 }

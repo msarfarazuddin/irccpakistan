@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { FormEvent, useMemo, useState } from "react";
 import { formatBlogDate, getAllBlogPosts } from "@/app/data/blogPosts";
 
 function SearchIcon() {
@@ -22,6 +25,31 @@ function ArrowIcon() {
 
 export default function BlogPage() {
   const posts = getAllBlogPosts();
+  const [query, setQuery] = useState("");
+  const [activeQuery, setActiveQuery] = useState("");
+
+  const runSearch = (e?: FormEvent) => {
+    e?.preventDefault();
+    setActiveQuery(query.trim().toLowerCase());
+  };
+
+  const filteredPosts = useMemo(() => {
+    if (!activeQuery) return posts;
+
+    return posts.filter((post) => {
+      const contentText = post.content
+        .map((block) => {
+          if (typeof block === "string") return block;
+          if (block.type === "ul") return block.items.join(" ");
+          return block.text;
+        })
+        .join(" ");
+
+      const searchable = `${post.title} ${post.excerpt} ${post.author} ${post.slug} ${contentText}`.toLowerCase();
+      return searchable.includes(activeQuery);
+    });
+  }, [activeQuery, posts]);
+
   const featuredPosts = posts.slice(0, 3);
   const latestPosts = posts.slice(0, 4);
 
@@ -46,19 +74,27 @@ export default function BlogPage() {
             we take pride in our accomplishments.
           </p>
 
-          <div className="mx-auto mt-8 flex w-full max-w-xl flex-col items-stretch justify-center gap-3 sm:flex-row">
+          <form
+            onSubmit={runSearch}
+            className="mx-auto mt-8 flex w-full max-w-xl flex-col items-stretch justify-center gap-3 sm:flex-row"
+          >
             <div className="flex flex-1 items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-2 text-sm text-[#94A3B8] shadow-sm">
               <SearchIcon />
               <input
                 type="text"
-                placeholder="Input Placeholder"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search blog posts..."
                 className="w-full bg-transparent text-[#0B1220] placeholder:text-[#94A3B8] focus:outline-none"
               />
             </div>
-            <button className="rounded-full bg-[#0e58a8] px-6 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0e58a8]">
+            <button
+              type="submit"
+              className="rounded-full bg-[#0e58a8] px-6 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0e58a8]"
+            >
               Find Now
             </button>
-          </div>
+          </form>
         </div>
       </section>
 
@@ -71,7 +107,7 @@ export default function BlogPage() {
             </div>
 
             <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post) => (
+              {filteredPosts.map((post) => (
                 <article
                   key={post.slug}
                   className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-[0_12px_30px_rgba(15,23,42,0.08)]"
@@ -107,6 +143,11 @@ export default function BlogPage() {
                 </article>
               ))}
             </div>
+            {filteredPosts.length === 0 && (
+              <p className="mt-6 text-sm font-medium text-[#475569]">
+                No related blog found for "{query.trim() || activeQuery}".
+              </p>
+            )}
           </div>
 
           <aside className="space-y-10">

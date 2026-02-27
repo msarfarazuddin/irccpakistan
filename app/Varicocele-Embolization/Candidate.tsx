@@ -3,15 +3,15 @@ import Image from "next/image";
 const symptoms = [
     {
         title: "Requires NO general anesthesia (only local anesthesia)",
-        img: "/one1.png",
+        img: "/Requires NO.png",
     },
     {
         title: "Results in NO scarring",
-        img: "/two2.png",
+        img: "/Results in NO scarring.png",
     },
     {
         title: "Requires NO overnight stay (same day procedure)",
-        img: "/three.png",
+        img: "/NO overnight stay.png",
     },
 ];
 
@@ -23,7 +23,7 @@ const expect = [
     },
     {
         title: "Quicker recovery time; days vs. weeks as compared to open surgery",
-        img: "/two2.png",
+        img: "/Quicker recovery time.png",
     },
     {
         title: "Reduced risk of infection",

@@ -7,6 +7,8 @@ export const runtime = "nodejs";
 type ContactPayload = {
   fullName?: string;
   phone?: string;
+  disease?: string;
+  email?: string;
   message?: string;
   page?: string;
 };
@@ -36,8 +38,9 @@ function parseEmailList(value: string | null) {
     .filter(Boolean);
 }
 
-function formatSheetsError(error: any) {
-  const status = error?.code || error?.response?.status;
+function formatSheetsError(error: unknown) {
+  const err = error as { code?: number; response?: { status?: number } };
+  const status = err.code || err.response?.status;
   if (status === 404) {
     return "Google Sheet not found or not shared with the service account.";
   }
@@ -61,6 +64,8 @@ export async function POST(request: Request) {
     const body = (await request.json()) as ContactPayload;
     const fullName = (body.fullName || "").trim();
     const phone = (body.phone || "").trim();
+    const disease = (body.disease || "").trim();
+    const email = (body.email || "").trim();
     const message = (body.message || "").trim();
     const page = (body.page || "").trim();
 
@@ -92,7 +97,7 @@ export async function POST(request: Request) {
         range: `${sheetName}!A1`,
         valueInputOption: "USER_ENTERED",
         requestBody: {
-          values: [[timestamp, fullName, phone, message, page]],
+          values: [[timestamp, fullName, phone, disease, email, message, page]],
         },
       });
     } catch (error) {
@@ -132,6 +137,8 @@ export async function POST(request: Request) {
       "",
       `Name: ${fullName}`,
       `Phone: ${phone}`,
+      disease ? `Disease: ${disease}` : null,
+      email ? `Email: ${email}` : null,
       `Message: ${message}`,
       page ? `Page: ${page}` : null,
       `Timestamp: ${timestamp}`,

@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
         location: "Peshawar",
         rating: 5,
         poster: "/one.png",
-        video: "/onevr.mp4",
+        video: "/onev.mp4",
         quote:
           "It was a painful journey but thanks to IRCC Pakistan I got better. At 25 , I was diagnosed with fibroids after experiencing massive pain. I felt alone. No doctors wanted to do anything with a girl like me. The only procedure they knew of was a hysterectomy and at 25 that is definitely not happening; not even if i wanted to just end the pain, I was going through everyday. But by the Grace of God now I am healthy and perfectly normal after fibroid embolization.",
       },
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
         role: "Athlete",
         location: "Islamabad",
         rating: 5,
-        poster: "/three-2.png", // rename recommended
+        poster: "/three (2).png",
         video: "/twov.mp4",
         quote:
           "It was a transformative experience, and I am grateful to IRCC Pakistan. At 30, I was struggling with severe varicoceles, causing constant discomfort. I felt hopeless, but Dr. Qazi offered a minimally invasive solution that changed everything. Now, I'm pain-free and back to my active life, thanks to varicocele embolization.",
@@ -64,14 +64,14 @@ export default function TestimonialsSection() {
         location: "Islamabad",
         rating: 5,
         poster: "/two.png",
-        video: "/threevr.mp4",
+        video: "/threev.mp4",
         quote:
           "My journey was tough, but thanks to the support from the healthcare team in Pakistan, I found relief. At 25, I was diagnosed with fibroids after enduring severe pain. I felt isolated, as many doctors were hesitant to help someone like me. The only option they suggested was a hysterectomy, which was not an option for me at that age, even though I was desperate to escape the daily agony. Thankfully, after undergoing fibroid embolization, I am now healthy and living life to the fullest.",
       },
 
 
-       {
-        id: "3",
+      {
+        id: "4",
         name: "Aisha Khan",
         role: "Couple",
         location: "Islamabad",
@@ -159,7 +159,7 @@ export default function TestimonialsSection() {
               <article
                 key={t.id}
                 data-card
-                className="relative h-[500px] w-full flex-none snap-start overflow-hidden rounded-2xl bg-black shadow-lg sm:w-[calc(50%-12px)] lg:w-[calc(29.333%-16px)]"
+                className="relative h-[500px] w-full flex-none snap-start overflow-hidden rounded-2xl bg-[#0E58A8] shadow-lg sm:w-[calc(50%-12px)] lg:w-[calc(29.333%-16px)]"
               >
                 {/* ✅ Poster image layer (always reliable) */}
                 <img

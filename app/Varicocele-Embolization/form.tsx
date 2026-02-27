@@ -72,11 +72,11 @@ export default function ConsultationSection() {
         </div>
 
         {/* Heading */}
-        <h4 className="mt-6 text-3xl lg:text-5xl md:text-5xl text-gray-900">
+        <h4 className="mt-6 text-4xl lg:text-4xl md:text-5xl text-gray-900">
           If you’re facing{" "}
-          <span className="text-[#0E58A8] font-bold">Uterine Fibroids,</span>{" "}
+          <span className="text-[#0E58A8] font-bold">Varicocele Embolization,</span>{" "}
           contact us now for <br className="hidden md:block" />
-          free online consultation
+           online consultation
         </h4>
 
         {/* Form */}
