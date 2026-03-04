@@ -51,8 +51,8 @@ export default function ConsultationSection() {
         throw new Error(data?.error || "Unable to submit right now.");
       }
 
-      setStatus("success");
-      setForm({ fullName: "", phone: "", message: "" });
+      window.location.href = "/thank-you";
+      return;
     } catch (err: any) {
       setStatus("error");
       setError(err?.message || "Unable to submit right now.");
@@ -76,7 +76,7 @@ export default function ConsultationSection() {
           If you’re facing{" "}
           <span className="text-[#0E58A8] font-bold">Uterine Fibroids,</span>{" "}
           contact us now for <br className="hidden md:block" />
-          free online consultation
+           online consultation
         </h4>
 
         {/* Form */}

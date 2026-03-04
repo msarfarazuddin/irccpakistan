@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type DropdownLink = { label: string; href: string };
 
@@ -19,12 +19,19 @@ const navLinks: NavLink[] = [
       { label: "Uterine Fibroid Embolization", href: "/Uterine-Fibroid-Embolization" },
       { label: "Varicocele Embolization", href: "/Varicocele-Embolization" },
       { label: "Varicose Vein Ablation", href: "/Varicose-Vein-Ablation" },
+      { label: "Thyroid Radiofrequency Ablation", href: "/Thyroid-Radiofrequency-Ablation" },
       { label: "Fallopian Tube Recanalization", href: "/Fallopian-Tube-Recanalization" },
       { label: "Prostate Artery Embolization for Benign Prostatic Hyperplasia", href: "/Prostate-Artery-Embolization-for-Benign-Prostatic-Hyperplasia" },
       { label: "Transjugular Intrahepatic Portosystemic Shunt", href: "/Transjugular-Intrahepatic-Portosystemic-Shunt" },
+      { label: "Endometriotic Ovarian Cyst Ablation", href: "/Endometriotic-Ovarian-Cyst-Ablation" },
+      { label: "Genicular Arterial Embolization for Knee Pain", href: "/Genicular-Arterial-Embolization-for-Knee-Pain" },
+      { label: "Hemorrhoidal Artery Embolization", href: "/Hemorrhoidal-Artery-Embolization" },
+      { label: "Thyroid Artery Embolization", href: "/Thyroid-Artery-Embolization" },
+      { label: "Thyroid Alcohol cyst ablation", href: "/Thyroid-Alcohol-cyst-ablation" },
+      { label: "Plantar Fasciitis", href: "/Plantar-Fasciitis" },
+      { label: "Tenosynovitis", href: "/Tenosynovitis" },
       { label: "Radiofrequency Ablation of Osteoid Osteoma", href: "/Radiofrequency-Ablation-of-Osteoid-Osteoma" },
       { label: "Pelvic Congestion Syndrome Treatment", href: "/Pelvic-Congestion-Syndrome-Treatment" },
-      { label: "Thyroid Radiofrequency Ablation", href: "/Thyroid-Radiofrequency-Ablation" },
       { label: "Interventional Oncology", href: "/Interventional-Oncology" },
       { label: "Vascular Malformation Treatment", href: "/Vascular-Malformation-Treatment" },
       { label: "Peripheral Vascular Disease", href: "/Peripheral-Vascular-Disease" },
@@ -36,13 +43,7 @@ const navLinks: NavLink[] = [
   { label: "Contact Us", href: "/Contact" },
 ];
 
-const contactNumbers = ["03324520052", "03310232883", "03310232883"];
-
-const chunk = <T,>(arr: T[], size: number) => {
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
-};
+const contactNumbers = ["03324520052", "03310232883", "03340005020"];
 
 // ✅ Type guard: ensures dropdownLinks exists
 const isServicesDropdown = (
@@ -65,7 +66,6 @@ export default function Header() {
 
   const services = navLinks.find(isServicesDropdown);
   const serviceLinks = services?.dropdownLinks ?? [];
-  const columns = useMemo(() => chunk(serviceLinks, 5), [serviceLinks]);
 
   // scroll bg
   useEffect(() => {
@@ -181,8 +181,10 @@ export default function Header() {
           {/* Numbers */}
           <div className="hidden items-center gap-2 text-[16px] font-semibold text-[#1d2a50] xl:flex">
             {contactNumbers.map((n, i) => (
-              <span key={`${n}-${i}`}>
-                {n}
+              <span key={`${n}-${i}`} className="flex items-center">
+                <a href={`tel:${n}`} className="hover:underline">
+                  {n}
+                </a>
                 {i < contactNumbers.length - 1 && (
                   <span className="mx-2 text-[#111111]">|</span>
                 )}
@@ -238,28 +240,24 @@ export default function Header() {
               </div>
 
               <div className="col-span-12 md:col-span-8 p-6">
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {columns.map((col, idx) => (
-                    <div key={idx} className="flex flex-col">
-                      {col.map((d) => (
-                        <a
-                          key={d.label}
-                          href={d.href}
-                          onClick={() => setDesktopServicesOpen(false)}
-                          className="group rounded-xl px-3 py-2 text-sm font-semibold text-[#1d2a50] transition hover:bg-[#F2F6FF]"
-                        >
-                          <div className="flex items-start justify-between gap-3">
-                            <span className="leading-5">{d.label}</span>
-                            <span className="mt-[2px] opacity-0 transition group-hover:opacity-100">
-                              <svg viewBox="0 0 24 24" className="h-4 w-4 text-[#0E58A8]" fill="none" stroke="currentColor" strokeWidth="2">
-                                <path d="M5 12h14" />
-                                <path d="M12 5l7 7-7 7" />
-                              </svg>
-                            </span>
-                          </div>
-                        </a>
-                      ))}
-                    </div>
+                <div className="columns-1 gap-3 sm:columns-2 lg:columns-3">
+                  {serviceLinks.map((d) => (
+                    <a
+                      key={d.label}
+                      href={d.href}
+                      onClick={() => setDesktopServicesOpen(false)}
+                      className="group mb-3 block break-inside-avoid rounded-xl px-3 py-2 text-sm font-semibold text-[#1d2a50] transition hover:bg-[#F2F6FF]"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <span className="leading-5">{d.label}</span>
+                        <span className="mt-[2px] opacity-0 transition group-hover:opacity-100">
+                          <svg viewBox="0 0 24 24" className="h-4 w-4 text-[#0E58A8]" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M5 12h14" />
+                            <path d="M12 5l7 7-7 7" />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
                   ))}
                 </div>
 

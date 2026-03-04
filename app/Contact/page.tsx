@@ -53,8 +53,8 @@ export default function ContactPage() {
         throw new Error(data?.error || "Unable to submit right now.");
       }
 
-      setStatus("success");
-      setForm({ fullName: "", phone: "", message: "" });
+      window.location.href = "/thank-you";
+      return;
     } catch (err: any) {
       setStatus("error");
       setError(err?.message || "Unable to submit right now.");

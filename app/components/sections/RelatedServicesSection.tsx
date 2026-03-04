@@ -117,7 +117,7 @@ export default function RelatedServicesSection() {
               "Pelvic Congestion Syndrome",
               "Abnormal Placental Implantation",
             ]}
-            imageSrc="/female.png"
+            imageSrc="/fema.png"
             imageAlt="Female doctor"
             imageSide="right"
           />

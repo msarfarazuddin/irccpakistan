@@ -27,7 +27,7 @@ export default function FibroidSymptomsSection() {
                 playsInline
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
-                <source src="/banner cand.mp4" type="video/mp4" />
+                <source src="/banner-cand.mp4" type="video/mp4" />
             </video>
 
             {/* Blue Overlay */}
@@ -82,14 +82,14 @@ export default function FibroidSymptomsSection() {
             `}
                             >
 
-                                <div className="relative w-full h-48 rounded-lg overflow-hidden">
+                                {/* <div className="relative w-full h-48 rounded-lg overflow-hidden">
                                     <Image
                                         src={item.img}
                                         alt={item.title}
                                         fill
                                         className="object-cover"
                                     />
-                                </div>
+                                </div> */}
                                 <h3 className="mt-4 text-[18px] md:text-base font-semibold pl-13 pr-13 text-white text-center">
                                     {item.title}
                                 </h3>

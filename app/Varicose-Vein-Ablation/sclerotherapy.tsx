@@ -43,7 +43,7 @@ export default function FibroidSymptomsSection() {
                         <div className="lg:col-span-4">
                             <div className="relative w-full h-[280px] sm:h-[360px] lg:h-[420px] overflow-hidden rounded-xl">
                                 <Image
-                                    src="/Uterine F.png" // <-- apni image public me rakho
+                                    src="/Sclerotherapy.png" // <-- apni image public me rakho
                                     alt="Uterine Fibroid Embolization Patient"
                                     fill
                                     className="object-cover object-bottom"
@@ -61,7 +61,7 @@ export default function FibroidSymptomsSection() {
                         <div className="lg:col-span-4">
                             <div className="relative w-full h-[280px] sm:h-[360px] lg:h-[420px] overflow-hidden rounded-xl">
                                 <Image
-                                    src="/Uterine F.png" // <-- apni image public me rakho
+                                    src="/Benefits of Sclerotherapy.png" // <-- apni image public me rakho
                                     alt="Uterine Fibroid Embolization Patient"
                                     fill
                                     className="object-cover object-bottom"

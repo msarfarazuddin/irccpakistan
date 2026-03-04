@@ -89,19 +89,19 @@ export default function WhyChooseSection() {
             title: "Thyroid Interventions",
             desc: "Our Interventional Radiologists are trained in the West and have qualifications from globally recognized academies.",
             icon: <ThyroidIcon />,
-            href: "#",
+            href: "https://api.whatsapp.com/send/?phone=923340005020&text&type=phone_number&app_absent=0",
         },
         {
             title: "MSK Interventions",
             desc: "We specialize in a wide array of musculoskeletal interventional radiology services.",
             icon: <MSKIcon />,
-            href: "#",
+            href: "https://api.whatsapp.com/send/?phone=923340005020&text&type=phone_number&app_absent=0",
         },
         {
             title: "Pleural Management",
             desc: "Our Pleural Management specialists are trained in leading institutions worldwide, ensuring top-notch care.",
             icon: <PleuralIcon />,
-            href: "#",
+            href: "https://api.whatsapp.com/send/?phone=923340005020&text&type=phone_number&app_absent=0",
         },
     ];
 

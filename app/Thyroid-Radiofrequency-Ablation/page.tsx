@@ -15,9 +15,11 @@ export default function ost() {
            <About/>
            <Thyrodno/>
            <Textcenter/>
-           <Form/>
            <After/>
+           <Form/>
+           <section className="pt-20  bg-white">
            <Review/>
+           </section>
            <Blog/>
         </>
     );

@@ -5,12 +5,11 @@ import { useMemo, useRef, useState } from "react";
 type Testimonial = {
   id: string;
   name: string;
-  role: string;
   location: string;
   rating: number;
   quote: string;
   poster: string;
-  video?: string;
+  // video?: string;
 };
 
 function Stars({ rating }: { rating: number }) {
@@ -37,49 +36,45 @@ export default function TestimonialsSection() {
     () => [
       {
         id: "1",
-        name: "Lubna Abbasi",
-        role: "Teacher",
+        name: "Ayesha Malik",
         location: "Peshawar",
         rating: 5,
-        poster: "/one.png",
-        video: "/onevr.mp4",
+        poster: "/Ayesha Malik.jpg",
+        // video: "/onev.mp4",
         quote:
-          "It was a painful journey but thanks to IRCC Pakistan I got better. At 25 , I was diagnosed with fibroids after experiencing massive pain. I felt alone. No doctors wanted to do anything with a girl like me. The only procedure they knew of was a hysterectomy and at 25 that is definitely not happening; not even if i wanted to just end the pain, I was going through everyday. But by the Grace of God now I am healthy and perfectly normal after fibroid embolization.",
+          "I was facing severe fibroid symptoms that were affecting my daily life. After undergoing Uterine Fibroid Embolization, my condition improved remarkably without surgery. The procedure was comfortable, and recovery was very quick. I truly appreciate the care and professionalism of the medical team.",
       },
       {
         id: "2",
-        name: "Jamal Khan",
-        role: "Athlete",
+        name: "Ahmed Raza",
         location: "Islamabad",
         rating: 5,
-        poster: "/three-2.png", // rename recommended
-        video: "/twov.mp4",
+        poster: "/three (2).png",
+        // video: "/twov.mp4",
         quote:
-          "It was a transformative experience, and I am grateful to IRCC Pakistan. At 30, I was struggling with severe varicoceles, causing constant discomfort. I felt hopeless, but Dr. Qazi offered a minimally invasive solution that changed everything. Now, I'm pain-free and back to my active life, thanks to varicocele embolization.",
+          "I had been dealing with discomfort due to varicocele for a long time. The embolization procedure was simple and minimally invasive, and I experienced relief within a short period. The doctors explained everything clearly and made the entire process stress-free. Highly satisfied with the results.",
       },
       {
         id: "3",
-        name: "Aisha Khan",
-        role: "Couple",
+        name: "Sana Khan",
         location: "Islamabad",
         rating: 5,
-        poster: "/two.png",
-        video: "/threevr.mp4",
+        poster: "/Sana Khan.jpg",
+        // video: "/threev.mp4",
         quote:
-          "My journey was tough, but thanks to the support from the healthcare team in Pakistan, I found relief. At 25, I was diagnosed with fibroids after enduring severe pain. I felt isolated, as many doctors were hesitant to help someone like me. The only option they suggested was a hysterectomy, which was not an option for me at that age, even though I was desperate to escape the daily agony. Thankfully, after undergoing fibroid embolization, I am now healthy and living life to the fullest.",
+          "I was worried about thyroid treatment options until I learned about Radiofrequency Ablation. The procedure was safe, painless, and required no surgery. My symptoms improved significantly, and recovery was smooth. I highly recommend this treatment and the medical team.",
       },
 
 
-       {
-        id: "3",
-        name: "Aisha Khan",
-        role: "Couple",
+      {
+        id: "4",
+        name: "Muhammad Usman",
         location: "Islamabad",
         rating: 5,
-        poster: "/two.png",
-        video: "/threev.mp4",
+        poster: "/Muhammad Usman.jpg",
+        // video: "/threev.mp4",
         quote:
-          "It was a painful journey but thanks to IRCC Pakistan I got better. At 25 , I was diagnosed with fibroids after experiencing massive pain. I felt alone. No doctors wanted to do anything with a girl like me. The only procedure they knew of was a hysterectomy and at 25 that is definitely not happening; not even if i wanted to just end the pain, I was going through everyday. But by the Grace of God now I am healthy and perfectly normal after fibroid embolization.",
+          "My leg pain and visible veins were getting worse, but Varicose Vein Ablation completely changed my condition. The treatment was quick, and I was able to walk normally the same day. Excellent experience and very professional medical care.",
       },
     ],
     []
@@ -159,7 +154,7 @@ export default function TestimonialsSection() {
               <article
                 key={t.id}
                 data-card
-                className="relative h-[500px] w-full flex-none snap-start overflow-hidden rounded-2xl bg-black shadow-lg sm:w-[calc(50%-12px)] lg:w-[calc(29.333%-16px)]"
+                className="relative h-[500px] w-full flex-none snap-start overflow-hidden rounded-2xl bg-[#0E58A8] shadow-lg sm:w-[calc(50%-12px)] lg:w-[calc(29.333%-16px)]"
               >
                 {/* ✅ Poster image layer (always reliable) */}
                 <img
@@ -171,7 +166,7 @@ export default function TestimonialsSection() {
                   ].join(" ")}
                 />
 
-                {/* ✅ Video layer (plays on top, poster fades out) */}
+                {/* ✅ Video layer (plays on top, poster fades out)
                 {t.video && (
                   <video
                     src={t.video}
@@ -190,9 +185,9 @@ export default function TestimonialsSection() {
                       setPlaying((cur) => (cur === t.id ? null : cur));
                     }}
                   />
-                )}
+                )} */}
 
-                {/* Play button */}
+                {/* Play button
                 {t.video && (
                   <button
                     type="button"
@@ -210,7 +205,7 @@ export default function TestimonialsSection() {
                       </svg>
                     )}
                   </button>
-                )}
+                )} */}
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
@@ -224,7 +219,7 @@ export default function TestimonialsSection() {
                   <div className="mt-5">
                     <div className="text-lg font-semibold">{t.name}</div>
                     <div className="mt-1 text-xs text-white/70">
-                      {t.role} • {t.location}
+                       {t.location}
                     </div>
                     <div className="mt-3">
                       <Stars rating={t.rating} />

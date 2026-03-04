@@ -20,9 +20,6 @@ export default function Ufe() {
            <About/>
            <Textcenter/>
            <Benifits/>
-           <section className="pt-20  bg-white">
-           <Form/>
-           </section>
            <Work/>
            <Chemo/>
            <CheBenifits/>
@@ -30,7 +27,10 @@ export default function Ufe() {
            <Bland/>
            <BlandBenifits/>
            <Blandwork/>
+           <Form/>
+           <section className="pt-20  bg-white">
            <Review/>
+           </section>
            <Blog/>
         </>
     );

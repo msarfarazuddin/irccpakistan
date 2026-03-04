@@ -62,14 +62,14 @@ export default function FibroidSymptomsSection() {
             `}
                             >
 
-                                <div className="relative w-full h-48 rounded-lg overflow-hidden">
+                                {/* <div className="relative w-full h-48 rounded-lg overflow-hidden">
                                     <Image
                                         src={item.img}
                                         alt={item.title}
                                         fill
                                         className="object-cover"
                                     />
-                                </div>
+                                </div> */}
                                 <h3 className="mt-4 text-sm md:text-base font-semibold pl-5 pr-5 text-gray-800 text-center">
                                     {item.title}
                                 </h3>

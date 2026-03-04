@@ -22,7 +22,6 @@ export default function Problem() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        {/* rename file to banner-cand.mp4 and keep in /public */}
         <source src="/banner-cand.mp4" type="video/mp4" />
       </video>
 
@@ -58,9 +57,9 @@ export default function Problem() {
               key={index}
               className="bg-[#386fab] w-full max-w-full mx-auto rounded-xl shadow-xl hover:shadow-md transition duration-300 p-4"
             >
-              <div className="relative w-full h-48 rounded-lg overflow-hidden">
+              {/* <div className="relative w-full h-48 rounded-lg overflow-hidden">
                 <Image src={item.img} alt={item.title} fill className="object-cover" />
-              </div>
+              </div> */}
 
               <h3 className="mt-4 text-[18px] md:text-base font-semibold px-4 text-white text-center">
                 {item.title}
