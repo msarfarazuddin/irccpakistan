@@ -85,14 +85,14 @@ export default function Candidate() {
               key={index}
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 p-4"
             >
-              <div className="relative w-full h-48 rounded-lg overflow-hidden">
+              {/* <div className="relative w-full h-48 rounded-lg overflow-hidden">
                 <Image
                   src={item.img}
                   alt={item.title}
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <h3 className="mt-4 text-sm md:text-base font-semibold px-4 text-gray-800 text-center">
                 {item.title}
               </h3>
@@ -111,14 +111,14 @@ export default function Candidate() {
               key={index}
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 p-4"
             >
-              <div className="relative w-full h-48 rounded-lg overflow-hidden">
+              {/* <div className="relative w-full h-48 rounded-lg overflow-hidden">
                 <Image
                   src={item.img}
                   alt={item.title}
                   fill
                   className="object-cover"
                 />
-              </div>
+              </div> */}
               <h3 className="mt-4 text-sm md:text-base font-semibold px-4 text-gray-800 text-center">
                 {item.title}
               </h3>

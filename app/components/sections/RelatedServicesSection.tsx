@@ -115,9 +115,9 @@ export default function RelatedServicesSection() {
               "Uterine Artery Embolisation",
               "Fallopian Tube Recanalisation",
               "Pelvic Congestion Syndrome",
-              "Abnormal Placental Implantation",
+              "Endometriotic Ovarian Cyst Ablation",
             ]}
-            imageSrc="/female.png"
+            imageSrc="/fema.png"
             imageAlt="Female doctor"
             imageSide="right"
           />
@@ -126,11 +126,11 @@ export default function RelatedServicesSection() {
           <ServiceCard
             titlePrefix="Male-Related"
             titleAccent="Services"
-            desc="Experience advanced, minimally invasive treatments designed for men’s health — from managing varicocele and prostate symptoms to treating varicose veins with precision and care."
+            desc="Experience advanced, minimally invasive treatments designed for men’s health — from managing varicocele to treating prostate symptoms with precision and care."
             items={[
               "Varicocele Embolisation",
               "Prostate Artery Embolisation",
-              "Varicose Vein Ablation",
+              
             ]}
             imageSrc="/male.png"
             imageAlt="Male doctor"

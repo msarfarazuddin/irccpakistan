@@ -15,7 +15,7 @@ export default function ServicesSection() {
     {
       title: "Varicose Vein Ablations",
       desc: "Laser and RFA ablations can help you get rid of varicose veins without surgery...",
-      image: "/Uterine Fibroid Embolization.png",
+      image: "/Varicose Vein Ablations.jpg",
       href: "/Varicose-Vein-Ablation",
     },
     {
@@ -45,7 +45,7 @@ export default function ServicesSection() {
     {
       title: "Thyroid RFA",
       desc: "Image-guided thyroid RFA for select nodules with minimal downtime.",
-      image: "/Uterine Fibroid Embolization.png",
+      image: "/Thyroid RFA.jpg",
       href: "/Thyroid-Radiofrequency-Ablation",
     },
   ], []);

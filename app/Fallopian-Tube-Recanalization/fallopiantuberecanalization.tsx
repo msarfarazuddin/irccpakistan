@@ -53,7 +53,7 @@ export default function fallopiantuberecanalization() {
           {/* Center Image */}
           <div className="flex justify-center">
             <Image
-              src="/Uterine Fibroids.png" // apni image public folder me rakho
+              src="/tube recanalization.png" // apni image public folder me rakho
               alt="Uterus Illustration"
               width={500}
               height={300}

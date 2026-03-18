@@ -53,8 +53,8 @@ export default function ContactPage() {
         throw new Error(data?.error || "Unable to submit right now.");
       }
 
-      setStatus("success");
-      setForm({ fullName: "", phone: "", message: "" });
+      window.location.href = "/thank-you";
+      return;
     } catch (err: any) {
       setStatus("error");
       setError(err?.message || "Unable to submit right now.");
@@ -81,7 +81,7 @@ export default function ContactPage() {
             <div>
               <div className="rounded-2xl  bg-white p-6 sm:p-8 lg:p-10 ">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#0B1220]">
-                  IRCC Pakistan – Interventional Radiology Clinic
+                  IRCC Pakistan – interventional radiology clinical care
                 </h2>
 
                 <p className="mt-3 text-[#5B6577] leading-7">
@@ -95,22 +95,23 @@ export default function ContactPage() {
                   <div className="rounded-xl bg-gray-50 p-5">
                     <p className="text-sm font-semibold text-[#0E58A8]">Address</p>
                     <p className="mt-2 text-sm text-[#4B5563] leading-6">
-                      123 Main Boulevard <br />
-                      Lahore, Pakistan
+                      153/1, F Block Phase 5 D.H.A,<br></br> Lahore Pakistan
                     </p>
                   </div>
 
                   <div className="rounded-xl bg-gray-50 p-5">
                     <p className="text-sm font-semibold text-[#0E58A8]">Phone</p>
-                    <p className="mt-2 text-sm text-[#4B5563]">+92 300 1234567</p>
+                    <p className="mt-2 text-sm text-[#4B5563]">+92-3324520052</p>
+                    <p className="mt-2 text-sm text-[#4B5563]">+0334-0005020</p>
+                    <p className="mt-2 text-sm text-[#4B5563]">+92-3310232883</p>
                   </div>
 
                   <div className="rounded-xl bg-gray-50 p-5">
                     <p className="text-sm font-semibold text-[#0E58A8]">Email</p>
-                    <p className="mt-2 text-sm text-[#4B5563]">info@ircc.pk</p>
+                    <p className="mt-2 text-sm text-[#4B5563]">irccpakistan@gmail.com</p>
                   </div>
 
-                  <div className="rounded-xl bg-gray-50 p-5">
+                  {/* <div className="rounded-xl bg-gray-50 p-5">
                     <p className="text-sm font-semibold text-[#0E58A8]">
                       Working Hours
                     </p>
@@ -118,7 +119,7 @@ export default function ContactPage() {
                       Mon – Sat: 9:00 AM – 6:00 PM <br />
                       Sunday: Closed
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

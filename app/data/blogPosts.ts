@@ -123,16 +123,12 @@ const blogPosts: BlogPost[] = [
     slug: "pakistani-women-largely-unaware-of-uterine-fibroid-embolization-as-an-option-of-fibroid-treatment-without-surgery",
     title: "Pakistani women largely unaware of uterine fibroid!",
     date: "2025-04-26",
-    excerpt:
-      "Varicose veins are bulging, twisted veins visible under the skin. While often considered cosmetic, they can signal circulation problems.",
+    excerpt:"For decades, women with uterine fibroids, or benign growths inside the uterus, commonly have been offered two options to manage the symptoms—get a hysterectomy, or just deal with the pain.",
     image: "/blog.png",
     author: "IRCC Pakistan",
     readTime: "4 min read",
     content: [
-      {
-        type: "p",
-        text: "For decades, women with uterine fibroids, or benign growths inside the uterus, commonly have been offered two options to manage the symptoms—get a hysterectomy, or just deal with the pain.",
-      },
+     
       {
         type: "p",
         text: "Uterine fibroid embolization, a minimally invasive procedure, can relieve painful symptoms without removing a woman’s uterus.",

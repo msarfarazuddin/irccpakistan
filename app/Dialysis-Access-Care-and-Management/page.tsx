@@ -15,12 +15,14 @@ export default function Ftr() {
           <Banner/>
           <Text/>
           <About/>
-          <Form/>
           <Periton/>
           <Fistula/>
           <Cathet/>
           <Recana/>
+          <Form/>
+          <section className="pt-20  bg-white">
           <Review/>
+          </section>
           <Blog/>
         </>
     );
