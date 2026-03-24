@@ -13,10 +13,22 @@ type ServiceCard = {
 export default function ServicesSection() {
   const services = useMemo<ServiceCard[]>(() => [
     {
-      title: "UFE (Fibroids) Treatment",
-      desc: "Minimally invasive embolization option for uterine fibroids with fast recovery.",
-      image: "/Prostate Artery Embolization.png",
-      href: "/Uterine-Fibroid-Embolization",
+      title: "Varicose Vein Ablations",
+      desc: "Laser and RFA ablations can help you get rid of varicose veins without surgery...",
+      image: "/Uterine Fibroid Embolization.png",
+      href: "/Varicose-Vein-Ablation",
+    },
+    {
+      title: "Fallopian Tube Recanalization",
+      desc: "Non surgical treatment for infertility caused by tubal blockage.",
+      image: "/Fallopian Tube Recanalization.png",
+      href: "/Fallopian-Tube-Recanalization",
+    },
+    {
+      title: "Dialysis Access Services",
+      desc: "Maintain, preserve and restore your fistula by angioplasty and thrombectomy.",
+      image: "/Dialysis Access Services.png",
+      href: "/Dialysis-Access-Care-and-Management",
     },
     {
       title: "Avoid Varicocele Surgery",
