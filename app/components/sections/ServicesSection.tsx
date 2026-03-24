@@ -13,22 +13,10 @@ type ServiceCard = {
 export default function ServicesSection() {
   const services = useMemo<ServiceCard[]>(() => [
     {
-      title: "Varicose Vein Ablations",
-      desc: "Laser and RFA ablations can help you get rid of varicose veins without surgery...",
-      image: "/Uterine Fibroid Embolization.png",
-      href: "/Varicose-Vein-Ablation",
-    },
-    {
-      title: "Fallopian Tube Recanalization",
-      desc: "Non surgical treatment for infertility caused by tubal blockage.",
-      image: "/Fallopian Tube Recanalization.png",
-      href: "/Fallopian-Tube-Recanalization",
-    },
-    {
-      title: "Dialysis Access Services",
-      desc: "Maintain, preserve and restore your fistula by angioplasty and thrombectomy.",
-      image: "/Dialysis Access Services.png",
-      href: "/Dialysis-Access-Care-and-Management",
+      title: "UFE (Fibroids) Treatment",
+      desc: "Minimally invasive embolization option for uterine fibroids with fast recovery.",
+      image: "/Prostate Artery Embolization.png",
+      href: "/Uterine-Fibroid-Embolization",
     },
     {
       title: "Avoid Varicocele Surgery",
@@ -37,17 +25,42 @@ export default function ServicesSection() {
       href: "/Varicocele-Embolization",
     },
     {
-      title: "UFE (Fibroids) Treatment",
-      desc: "Minimally invasive embolization option for uterine fibroids with fast recovery.",
-      image: "/Prostate Artery Embolization.png",
-      href: "/Uterine-Fibroid-Embolization",
+      title: "Varicose Vein Ablations",
+      desc: "Laser and RFA ablations can help you get rid of varicose veins without surgery...",
+      image: "/Varicose Vein Ablations.jpg",
+      href: "/Varicose-Vein-Ablation",
     },
     {
-      title: "Thyroid RFA",
+      title: "Thyroid Radiofrequency Ablation",
       desc: "Image-guided thyroid RFA for select nodules with minimal downtime.",
-      image: "/Uterine Fibroid Embolization.png",
+      image: "/Thyroid RFA.jpg",
       href: "/Thyroid-Radiofrequency-Ablation",
     },
+    {
+      title: "Endometriotic cyst ablation ",
+      desc: "IRCC Pakistan offers advanced image-guided treatment for endometriotic ovarian cysts.",
+      image: "/Fallopian Tube Recanalization.png",
+      href: "/Endometriotic-Ovarian-Cyst-Ablation",
+    },
+    {
+      title: "Peripheral Vascular Disease",
+      desc: "PAD is a circulatory disease in which blocked or stenotic arteries (narrowed) reduce blood flow to the extremities, most commonly, the legs and feet.",
+      image: "/Peripheral Vascular Disease.jpeg",
+      href: "/Peripheral-Vascular-Disease",
+    },
+    {
+      title: "Vascular malformations",
+      desc: "Vascular malformation is a general term that includes congenital vascular anomalies of only veins, only lymph vessels, both veins and lymph vessels, or both arteries and veins.",
+      image: "/Vascular malformations.jpeg",
+      href: "/Vascular-Malformation-Treatment",
+    },
+    {
+      title: "Osteoid Osteoma Ablation",
+      desc: "Osteoid osteoma is a benign tumor of the bone. This tumor is most frequently found in the legs but may occur also at other bones in nearly any part of the body.",
+      image: "/Osteoid Osteoma Ablation.jpeg",
+      href: "/Radiofrequency-Ablation-of-Osteoid-Osteoma",
+    },
+    
   ], []);
 
   const cardClass = "w-[85vw] sm:w-[360px] lg:w-[300px] flex-none";

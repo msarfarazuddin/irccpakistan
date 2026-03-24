@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
-import Header from "@/app/components/layout/Header";
-import Footer from "@/app/components/layout/Footer";
+import ConditionalLayout from "@/app/components/layout/ConditionalLayout";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -46,9 +45,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${neueMontreal.variable} antialiased`}
       >
-        <Header />
-        <main className="min-h-[calc(100vh-160px)]">{children}</main>
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );

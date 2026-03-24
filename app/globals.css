@@ -32,11 +32,13 @@ h3 {
   font-weight: 700;
 }
 
+button{
+  font-weight: 600;
+}
 
 h4,
 h5,
 h6,
-button,
 input,
 label,
 select,

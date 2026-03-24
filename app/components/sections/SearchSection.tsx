@@ -142,7 +142,7 @@ export default function SearchSection() {
             Experience the future of minimally invasive care — where artificial
             intelligence meets medical precision.
             <br />
-            Get instant access to smarter diagnostics, personalised treatment
+            Get instant access to Smarter diagnosis, personalised treatment
             guidance, and real-time procedure insights.
           </p>
         </div>

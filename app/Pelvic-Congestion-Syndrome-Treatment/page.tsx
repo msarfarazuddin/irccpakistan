@@ -14,10 +14,13 @@ export default function Ufe() {
             <Banner />
             <About/>
             <Pelvic/>
-            <Form/>
+           
             <Daignos/>
             <Terated/>
             <Vein/>
+            
+             <Form/>
+            
             <section className="pt-20  bg-white">
             <Review/>
             </section>
