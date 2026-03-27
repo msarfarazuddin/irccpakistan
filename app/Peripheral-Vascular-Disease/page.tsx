@@ -14,11 +14,11 @@ export default function Ufe() {
     <>
       <Disease/>
       <Causes/>
-      <Form/>
       <Peripher/>
       <Treatment/>
       <Benifits/>
       <Textcenter/>
+      <Form/>
       <Review/>
       <Blog/>
     </>

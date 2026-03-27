@@ -42,7 +42,7 @@ export default function Candidate() {
           {/* Center Image */}
           <div className="flex justify-center">
             <Image
-              src="/Uterine Fibroids.png" // apni image public folder me rakho
+              src="/PAE.png" // apni image public folder me rakho
               alt="Uterus Illustration"
               width={420}
               height={300}

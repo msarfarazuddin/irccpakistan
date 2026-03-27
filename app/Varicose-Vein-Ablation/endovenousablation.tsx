@@ -39,7 +39,7 @@ export default function UterineFibroidsSection() {
           {/* Center Image */}
           <div className="flex flex-col  justify-center items-center">
             <Image
-              src="/Uterine Fibroids.png" // apni image public folder me rakho
+              src="/Ablation.png" // apni image public folder me rakho
               alt="Uterus Illustration"
               width={320}
               height={300}
