@@ -15,8 +15,20 @@ export default function ServicesSection() {
     {
       title: "UFE (Fibroids) Treatment",
       desc: "Minimally invasive embolization option for uterine fibroids with fast recovery.",
-      image: "/Prostate Artery Embolization.png",
+      image: "/Uterine Fibroid Embolization.png",
       href: "/Uterine-Fibroid-Embolization",
+    },
+    {
+      title: "Fallopian Tube Recanalization",
+      desc: "Non surgical treatment for infertility caused by tubal blockage.",
+      image: "/Fallopian Tube Recanalization.png",
+      href: "/Fallopian-Tube-Recanalization",
+    },
+    {
+      title: "Dialysis Access Services",
+      desc: "Maintain, preserve and restore your fistula by angioplasty and thrombectomy.",
+      image: "/Dialysis Access Services.png",
+      href: "/Dialysis-Access-Care-and-Management",
     },
     {
       title: "Varicocele Embolization",
