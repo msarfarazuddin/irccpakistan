@@ -1,0 +1,219 @@
+node:internal/modules/cjs/loader:1210
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home3/irccpaki/nextjs/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home3/irccpaki/nextjs/server.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home3/irccpaki/nextjs/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.20.0
+node:internal/modules/cjs/loader:1210
+  throw err;
+  ^
+
+Error: Cannot find module 'next'
+Require stack:
+- /home3/irccpaki/nextjs/server.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home3/irccpaki/nextjs/server.js:2:14)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home3/irccpaki/nextjs/server.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v20.20.0
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+Error: Failed to find Server Action "x". This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+Error: Failed to find Server Action "y". This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+Error: Failed to find Server Action "596380ac26671331eba39fb9831cb8dc5c27478b". This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+Error: Failed to find Server Action. This request might be from an older or newer deployment.
+Read more: https://nextjs.org/docs/messages/failed-to-find-server-action
+    at ignore-listed frames
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meetone.png received null
+⨯ The requested resource isn't a valid image for /meetthree.png received null
+⨯ The requested resource isn't a valid image for /meetfour.png received null
+⨯ The requested resource isn't a valid image for /meettwo.png received null
