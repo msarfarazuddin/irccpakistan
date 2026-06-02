@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 export default function Footer() {
   const quickLinks = [
@@ -31,7 +32,6 @@ export default function Footer() {
                   alt="IRCC Pakistan"
                   fill
                   className="object-contain"
-                  priority
                 />
               </div>
             </div>
@@ -204,8 +204,8 @@ function Pill({
   children,
 }: {
   href: string;
-  icon: React.ReactNode;
-  children: React.ReactNode;
+  icon: ReactNode;
+  children: ReactNode;
 }) {
   return (
     <Link
@@ -227,7 +227,7 @@ function SocialIcon({
 }: {
   href: string;
   label: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <a

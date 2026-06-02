@@ -41,11 +41,24 @@ export default function BlogPageClient() {
         .map((block) => {
           if (typeof block === "string") return block;
           if (block.type === "ul") return (block.items || []).join(" ");
+          if (block.type === "ol") return (block.items || []).join(" ");
+          if (block.type === "table") {
+            return [...block.headers, ...block.rows.flat()].join(" ");
+          }
+          if (block.type === "rich-p") {
+            return block.content
+              .map((segment) => (typeof segment === "string" ? segment : segment.text))
+              .join(" ");
+          }
           return block.text;
         })
         .join(" ");
+      const faqText = (post.faq || [])
+        .map((item) => `${item.question} ${item.answer}`)
+        .join(" ");
 
-      const searchable = `${post.title} ${post.excerpt} ${post.author} ${post.slug} ${contentText}`.toLowerCase();
+      const searchable =
+        `${post.title} ${post.excerpt} ${post.author} ${post.slug} ${contentText} ${faqText}`.toLowerCase();
       return searchable.includes(activeQuery);
     });
   }, [activeQuery, posts]);
@@ -115,7 +128,7 @@ export default function BlogPageClient() {
                   <div className="relative h-110 w-full">
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt={post.imageAlt ?? post.title}
                       fill
                       className="object-cover transition duration-500 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -164,7 +177,7 @@ export default function BlogPageClient() {
                     <div className="relative h-20 w-20 overflow-hidden rounded-2xl">
                       <Image
                         src={post.image}
-                        alt={post.title}
+                        alt={post.imageAlt ?? post.title}
                         fill
                         className="object-cover transition duration-300 group-hover:scale-105"
                         sizes="65px"
@@ -196,7 +209,7 @@ export default function BlogPageClient() {
                     <div className="relative h-20 w-20 overflow-hidden rounded-2xl">
                       <Image
                         src={post.image}
-                        alt={post.title}
+                        alt={post.imageAlt ?? post.title}
                         fill
                         className="object-cover transition duration-300 group-hover:scale-105"
                         sizes="65px"

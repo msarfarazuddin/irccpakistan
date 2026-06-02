@@ -50,7 +50,7 @@ li {
 }
 
 
-.bannerstyle.relative.min-h-screen.w-full.bg-cover.bg-center.bg-no-repeat {
+.bannerstyle {
     margin-top: -100px;
 }
 

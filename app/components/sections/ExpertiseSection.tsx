@@ -65,7 +65,6 @@ export default function ExpertiseSection() {
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33.33vw, 33.33vw"
                   className="object-cover"
-                  priority
                 />
               </div>
             </div>

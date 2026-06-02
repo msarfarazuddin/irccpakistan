@@ -420,10 +420,13 @@ export function buildRouteStructuredData(pathname: string | null) {
     const breadcrumbNode = buildBreadcrumbNode(cleanedPathname, blogPost.title);
     const webpageNode = buildBlogPageNode(blogPost, webpageUrl);
     const blogPostingNode = buildBlogPostingNode(blogPost, webpageUrl);
+    const faqNode = buildBlogFaqNode(blogPost, webpageUrl);
 
     return {
       "@context": "https://schema.org",
-      "@graph": [webpageNode, breadcrumbNode, blogPostingNode],
+      "@graph": faqNode
+        ? [webpageNode, breadcrumbNode, blogPostingNode, faqNode]
+        : [webpageNode, breadcrumbNode, blogPostingNode],
     };
   }
 
@@ -503,12 +506,15 @@ function buildRouteWebPageNode(
 }
 
 function buildBlogPageNode(blogPost: BlogPost, webpageUrl: string): JsonLdNode {
+  const title = blogPost.metaTitle ?? `${blogPost.title} | IRCC Pakistan`;
+  const description = blogPost.metaDescription ?? blogPost.excerpt;
+
   return {
     "@type": "MedicalWebPage",
     "@id": buildNodeId(`/blog/${blogPost.slug}`, "webpage"),
     url: webpageUrl,
-    name: `${blogPost.title} | IRCC Pakistan`,
-    description: blogPost.excerpt,
+    name: title,
+    description,
     inLanguage: SITE_LANGUAGE,
     isPartOf: { "@id": websiteId },
     about: { "@id": organizationId },
@@ -518,13 +524,15 @@ function buildBlogPageNode(blogPost: BlogPost, webpageUrl: string): JsonLdNode {
 }
 
 function buildBlogPostingNode(blogPost: BlogPost, webpageUrl: string): JsonLdNode {
+  const description = blogPost.metaDescription ?? blogPost.excerpt;
+
   return {
     "@type": "BlogPosting",
     "@id": buildNodeId(`/blog/${blogPost.slug}`, "blogposting"),
     url: webpageUrl,
     headline: blogPost.title,
     name: blogPost.title,
-    description: blogPost.excerpt,
+    description,
     articleSection: "Interventional Radiology",
     datePublished: toIsoDate(blogPost.date),
     dateModified: toIsoDate(blogPost.date),
@@ -534,6 +542,26 @@ function buildBlogPostingNode(blogPost: BlogPost, webpageUrl: string): JsonLdNod
     mainEntityOfPage: { "@id": buildNodeId(`/blog/${blogPost.slug}`, "webpage") },
     publisher: { "@id": organizationId },
     author: resolveBlogAuthor(blogPost.author),
+  };
+}
+
+function buildBlogFaqNode(blogPost: BlogPost, webpageUrl: string): JsonLdNode | null {
+  if (!blogPost.faq?.length) {
+    return null;
+  }
+
+  return {
+    "@type": "FAQPage",
+    "@id": `${webpageUrl}#faq`,
+    url: `${webpageUrl}#faq`,
+    mainEntity: blogPost.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }
 
@@ -646,19 +674,35 @@ function resolveBlogAuthor(author: string) {
 }
 
 function flattenBlogText(blogPost: BlogPost) {
-  return blogPost.content
+  const contentText = blogPost.content
     .map((block) => {
       if (typeof block === "string") {
         return block;
       }
 
-      if (block.type === "ul") {
+      if (block.type === "ul" || block.type === "ol") {
         return block.items.join(" ");
+      }
+
+      if (block.type === "table") {
+        return [...block.headers, ...block.rows.flat()].join(" ");
+      }
+
+      if (block.type === "rich-p") {
+        return block.content
+          .map((segment) => (typeof segment === "string" ? segment : segment.text))
+          .join(" ");
       }
 
       return block.text;
     })
     .join(" ");
+
+  const faqText = (blogPost.faq ?? [])
+    .map((item) => `${item.question} ${item.answer}`)
+    .join(" ");
+
+  return `${contentText} ${faqText}`.trim();
 }
 
 function countWords(text: string) {

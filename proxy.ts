@@ -87,7 +87,7 @@ const goneResponseHeaders = {
   "X-Robots-Tag": "noindex, nofollow, noarchive",
 } as const;
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   if (isGonePath(request.nextUrl.pathname)) {
     return new NextResponse("Gone", {
       status: 410,
@@ -123,5 +123,7 @@ function getRedirectDestination(pathname: string) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:avif|gif|ico|jpe?g|json|mp4|otf|png|svg|txt|webp|woff2?|xml)$).*)",
+  ],
 };

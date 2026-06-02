@@ -12,7 +12,7 @@ type NavLink =
   | { label: string; hasDropdown: true; dropdownLinks: DropdownLink[] };
 
 const navLinks: NavLink[] = [
-  { label: "Home", href: "/home" },
+  { label: "Home", href: "/" },
   { label: "About Us", href: "/About" },
   {
     label: "Services",
@@ -128,7 +128,7 @@ export default function Header() {
       {/* TOP BAR */}
       <div className="mx-auto grid h-[72px] w-full max-w-full grid-cols-[auto_1fr_auto] items-center px-4 text-sm sm:px-6 lg:px-10">
         {/* Logo */}
-        <Link href="/home" className="block" aria-label="Go to home page">
+        <Link href="/" className="block" aria-label="Go to home page">
           <div className="relative h-20 w-36">
             <Image
               src="/logo.png"
@@ -306,7 +306,7 @@ export default function Header() {
           {/* drawer */}
           <div className="fixed right-0 top-0 z-50 flex h-dvh w-[86%] max-w-sm flex-col bg-white shadow-xl">
             <div className="shrink-0 flex items-center justify-between px-4 py-4">
-              <Link href="/home" onClick={closeMobileMenu} className="block" aria-label="Go to home page">
+              <Link href="/" onClick={closeMobileMenu} className="block" aria-label="Go to home page">
                 <div className="relative h-12 w-28">
                   <Image src="/logo.png" alt="logo" fill sizes="112px" className="object-contain object-left" />
                 </div>

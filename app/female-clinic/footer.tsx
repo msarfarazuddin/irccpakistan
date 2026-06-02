@@ -1,7 +1,5 @@
 "use client";
 
-import { FaTwitter, FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
-
 export default function FooterBottom() {
   return (
     <div className="bg-[#1e76bd] text-white">
@@ -16,28 +14,28 @@ export default function FooterBottom() {
             className="flex h-9 w-9 items-center justify-center rounded-full bg-black transition hover:scale-110"
             aria-label="Twitter"
           >
-            <FaTwitter size={14} />
+            <XIcon />
           </a>
           <a
             href="https://www.facebook.com/irccpakistan"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-black transition hover:scale-110"
             aria-label="Facebook"
           >
-            <FaFacebookF size={14} />
+            <FacebookIcon />
           </a>
           <a
             href="https://youtu.be/Ppfrn80dfzs"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-black transition hover:scale-110"
             aria-label="YouTube"
           >
-            <FaYoutube size={14} />
+            <YouTubeIcon />
           </a>
           <a
             href="https://instagram.com/irccpakistan?igshid=i7fclbk4863y"
             className="flex h-9 w-9 items-center justify-center rounded-full bg-black transition hover:scale-110"
             aria-label="Instagram"
           >
-            <FaInstagram size={14} />
+            <InstagramIcon />
           </a>
           <a
             href="https://www.tiktok.com/@drshahbazqazi"
@@ -60,6 +58,48 @@ export default function FooterBottom() {
         </p>
       </div>
     </div>
+  );
+}
+
+function XIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+      <path d="M18.3 2H21l-6.6 7.6L22 22h-6l-4.7-6.1L6 22H3l7.1-8.2L2 2h6.1l4.2 5.6L18.3 2zm-1 18h1.7L7.7 4H6L17.3 20z" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+      <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.7c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.5 3h-2.5v7A10 10 0 0 0 22 12z" />
+    </svg>
+  );
+}
+
+function YouTubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+      <path d="M23 12s0-3.6-.5-5.3a3 3 0 0 0-2.1-2.1C18.7 4 12 4 12 4s-6.7 0-8.4.6A3 3 0 0 0 1.5 6.7C1 8.4 1 12 1 12s0 3.6.5 5.3a3 3 0 0 0 2.1 2.1c1.7.6 8.4.6 8.4.6s6.7 0 8.4-.6a3 3 0 0 0 2.1-2.1C23 15.6 23 12 23 12z" />
+      <path d="M10 15.5V8.5L16 12l-6 3.5z" fill="#ffffff" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-4 w-4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      aria-hidden="true"
+    >
+      <rect x="4" y="4" width="16" height="16" rx="4" />
+      <circle cx="12" cy="12" r="3.5" />
+      <path d="M17.5 6.5h.01" />
+    </svg>
   );
 }
 

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 import { usePathname } from "next/navigation";
@@ -90,13 +91,14 @@ export default function FemaleClinicForm() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="relative h-14 w-40 sm:h-16 sm:w-44">
-            <a href="/">  <Image
-                src="/logo.png" // <-- put your logo in /public/logo.png
-                alt="IRCC Pakistan"
-                fill
-                className="object-contain object-left"
-              />
-              </a>
+              <Link href="/" aria-label="Go to home page">
+                <Image
+                  src="/logo.png" // <-- put your logo in /public/logo.png
+                  alt="IRCC Pakistan"
+                  fill
+                  className="object-contain object-left"
+                />
+              </Link>
             </div>
           </div>
 

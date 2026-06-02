@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LazyBackgroundVideo from "@/app/components/media/LazyBackgroundVideo";
 
 const symptoms = [
   {
@@ -15,15 +16,10 @@ const symptoms = [
 export default function Problem() {
   return (
     <section className="relative bg-[#0E58A8E5] py-16 px-4 overflow-hidden">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
+      <LazyBackgroundVideo
+        src="/banner-cand.mp4"
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/banner-cand.mp4" type="video/mp4" />
-      </video>
+      />
 
       {/* Blue Overlay */}
       <div className="absolute inset-0 bg-[rgba(14,88,168,0.9)]" />

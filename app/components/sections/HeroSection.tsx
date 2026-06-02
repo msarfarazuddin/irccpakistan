@@ -71,17 +71,20 @@ export default function HeroSection() {
   return (
     <section>
       <div
-        className="bannerstyle relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(
-            rgba(231, 238, 252, 0.29),
-            rgb(231, 238, 252)
-          ),
-          url('/bannermain.png')`,
-        }}
+        className="bannerstyle relative min-h-screen w-full overflow-hidden"
       >
-        <div className="mobilecss mx-auto grid w-full max-w-full grid-cols-1 gap-10 bg-white/0 pb-0 lg:pb-0 pt-40  sm:px-10 lg:grid-cols-12">
-          <div className="absolute left-0 top-1/2 hidden bg-white -translate-y-1/2 flex-col shadow-lg sm:flex">
+        <Image
+          src="/bannermain.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="pointer-events-none object-cover"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(231,238,252,0.29),rgb(231,238,252))]" />
+
+        <div className="mobilecss relative z-10 mx-auto grid w-full max-w-full grid-cols-1 gap-10 bg-white/0 pb-0 lg:pb-0 pt-40  sm:px-10 lg:grid-cols-12">
+          <div className="absolute left-0 top-1/2 z-20 hidden bg-white -translate-y-1/2 flex-col shadow-lg sm:flex">
             {socialLinks.map((link) => (
               <a
                 key={link.label}
@@ -97,7 +100,7 @@ export default function HeroSection() {
 
           </div>
 
-          <div className="lg:col-span-5">
+          <div className="relative z-10 lg:col-span-5">
             <div className="flex h-full items-end justify-center px-6 pb-0">
               <div className="bannerimag absolute bottom h-full w-full max-w-[380px] " style={{ bottom: `0` }}>
                 <Image
@@ -141,7 +144,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 justify-center px-6 py-10 sm:px-10 lg:col-span-7">
+          <div className="relative z-10 flex flex-col gap-6 justify-center px-6 py-10 sm:px-10 lg:col-span-7">
             <div className="inline-flex w-fit items-center gap-2 rounded-full shadow-lg border border-[#dce6ff] bg-white px-4 py-2 text-sm font-semibold text-[#0E58A8]">
               <span className="flex h-6 w-6 items-center justify-center rounded-full text-[30px] font-bold text-[#0E58A8]">
                 +

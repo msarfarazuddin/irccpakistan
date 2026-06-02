@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import LazyBackgroundVideo from "@/app/components/media/LazyBackgroundVideo";
 
 type Symptom = {
     title: ReactNode;
@@ -38,15 +39,10 @@ const symptoms: Symptom[] = [
 export default function FibroidSymptomsSection() {
     return (
         <section className="relative  bg-[#0E58A8E5] from-gray-100 to-gray-200 py-16  px-4"  >
-            <video
-                autoPlay
-                muted
-                loop
-                playsInline
+            <LazyBackgroundVideo
+                src="/banner-cand.mp4"
                 className="absolute top-0 left-0 w-full h-full object-cover"
-            >
-                <source src="/banner-cand.mp4" type="video/mp4" />
-            </video>
+            />
 
             {/* Blue Overlay */}
             <div className="absolute inset-0 bg-[rgba(14,88,168,0.9)]"></div>

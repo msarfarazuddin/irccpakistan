@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 type CardProps = {
@@ -58,7 +56,6 @@ function ServiceCard({
               src={imageSrc}
               alt={imageAlt}
               fill
-              priority
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 41.67vw"
               className={[
                 "object-contain object-bottom",

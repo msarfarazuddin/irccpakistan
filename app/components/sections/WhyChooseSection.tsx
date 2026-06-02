@@ -1,11 +1,10 @@
-"use client";
-
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 type ChooseCard = {
     title: string;
     desc: string;
-    icon: React.ReactNode; // SVG/JSX icon
+    icon: ReactNode; // SVG/JSX icon
     href?: string;
 };
 
