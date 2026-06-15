@@ -63,6 +63,9 @@ export const metadata: Metadata = {
   title: "IRCC Pakistan - Interventional Radiology & Vascular Treatment Center",
   description:
     "Pakistan's leading interventional radiology and vascular treatment center offering minimally invasive procedures including UFE, varicocele embolization, thyroid RFA, and more.",
+  verification: {
+    google: "h-Pw04SMHXptLYk79Gq_pBQnndxmyeY3JWLCSwRvL5A",
+  },
 };
 
 export default function RootLayout({
