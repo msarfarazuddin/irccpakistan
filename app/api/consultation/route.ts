@@ -17,17 +17,20 @@ type ContactPayload = {
   page?: string;
 };
 
-const REQUIRED_ENV = [
-  "GOOGLE_SHEETS_CLIENT_EMAIL",
-  "GOOGLE_SHEETS_PRIVATE_KEY",
-  "GOOGLE_SHEETS_SPREADSHEET_ID",
-  "GOOGLE_SHEETS_SHEET_NAME",
+const REQUIRED_EMAIL_ENV = [
   "SMTP_HOST",
   "SMTP_PORT",
   "SMTP_USER",
   "SMTP_PASS",
   "CONTACT_EMAIL_TO",
 ];
+
+const GOOGLE_SHEETS_ENV = [
+  "GOOGLE_SHEETS_CLIENT_EMAIL",
+  "GOOGLE_SHEETS_PRIVATE_KEY",
+  "GOOGLE_SHEETS_SPREADSHEET_ID",
+  "GOOGLE_SHEETS_SHEET_NAME",
+] as const;
 
 let sheetsClient: ReturnType<typeof google.sheets> | null = null;
 let mailTransporter: ReturnType<typeof nodemailer.createTransport> | null = null;
@@ -46,15 +49,33 @@ function parseEmailList(value: string | null) {
 }
 
 function formatSheetsError(error: unknown) {
-  const err = error as { code?: number; response?: { status?: number } };
+  const err = error as {
+    code?: number;
+    message?: string;
+    response?: { status?: number; data?: { error?: { message?: string } } };
+  };
   const status = err.code || err.response?.status;
+  const message = err.response?.data?.error?.message || err.message || "";
   if (status === 404) {
     return "Google Sheet not found or not shared with the service account.";
   }
   if (status === 403) {
     return "Google Sheet access denied. Share the sheet with the service account.";
   }
+  if (
+    message.includes("This operation is not supported for this document") ||
+    message.includes("not supported for this document")
+  ) {
+    return "This spreadsheet is in Excel (.xlsx) mode. Convert it to a native Google Sheet, then try again.";
+  }
+  if (message) {
+    return `Unable to write to Google Sheet: ${message}`;
+  }
   return "Unable to write to Google Sheet.";
+}
+
+function getMissingEnv(names: readonly string[]) {
+  return names.filter((name) => !getEnv(name));
 }
 
 function getSheetsClient() {
@@ -95,7 +116,7 @@ function getMailTransporter() {
 
 export async function POST(request: Request) {
   try {
-    for (const key of REQUIRED_ENV) {
+    for (const key of REQUIRED_EMAIL_ENV) {
       if (!getEnv(key)) {
         return NextResponse.json(
           { error: `Missing environment variable: ${key}` },
@@ -122,37 +143,45 @@ export async function POST(request: Request) {
       );
     }
 
-    const spreadsheetId = getEnv("GOOGLE_SHEETS_SPREADSHEET_ID")!;
-    const sheetName = getEnv("GOOGLE_SHEETS_SHEET_NAME")!;
-    const sheets = getSheetsClient();
     const timestamp = new Date().toISOString();
+    const missingSheetsEnv = getMissingEnv(GOOGLE_SHEETS_ENV);
 
     let sheetError: string | null = null;
-    try {
-      const row = [
-        timestamp,
-        fullName,
-        age,
-        phone,
-        city,
-        conditionConcern,
-        preferredDateTime,
-        message,
-        email,
-        page,
-      ];
+    if (missingSheetsEnv.length === 0) {
+      try {
+        const spreadsheetId = getEnv("GOOGLE_SHEETS_SPREADSHEET_ID")!;
+        const sheetName = getEnv("GOOGLE_SHEETS_SHEET_NAME")!;
+        const sheets = getSheetsClient();
+        const row = [
+          timestamp,
+          fullName,
+          age,
+          phone,
+          city,
+          conditionConcern,
+          preferredDateTime,
+          message,
+          email,
+          page,
+        ];
 
-      await sheets.spreadsheets.values.append({
-        spreadsheetId,
-        range: `${sheetName}!A1`,
-        valueInputOption: "USER_ENTERED",
-        requestBody: {
-          values: [row],
-        },
-      });
-    } catch (error) {
-      sheetError = formatSheetsError(error);
-      console.error("Sheets append error:", error);
+        await sheets.spreadsheets.values.append({
+          spreadsheetId,
+          range: `${sheetName}!A1`,
+          valueInputOption: "USER_ENTERED",
+          requestBody: {
+            values: [row],
+          },
+        });
+      } catch (error) {
+        sheetError = formatSheetsError(error);
+        console.error("Sheets append error:", error);
+      }
+    } else {
+      console.warn(
+        "Skipping Google Sheets append because these env vars are missing:",
+        missingSheetsEnv.join(", ")
+      );
     }
 
     const recipients = parseEmailList(getEnv("CONTACT_EMAIL_TO"));
