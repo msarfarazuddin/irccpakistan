@@ -78,6 +78,7 @@ export default function HeroSection() {
           alt=""
           fill
           priority
+          quality={72}
           sizes="100vw"
           className="pointer-events-none object-cover"
         />
@@ -107,9 +108,10 @@ export default function HeroSection() {
                   src="/drshbaz.png"
                   alt="Dr. Shahbaz Ahmed Qazi"
                   fill
-                  sizes="(max-width: 640px) 100vw, 380px"
+                  loading="eager"
+                  quality={80}
+                  sizes="(max-width: 640px) 280px, (max-width: 1024px) 38vw, 380px"
                   className="object-contain object-bottom sm:object-bottom"
-                  priority
                 />
                 <div className="absolute bottom-9 lg:left-42 sm:left-0 flex -translate-x-1/2 items-center justify-center">
                   <div className="absolute bottom-2 left-50 -translate-x-1/2">

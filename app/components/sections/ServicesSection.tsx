@@ -68,7 +68,6 @@ export default function ServicesSection() {
   const [index, setIndex] = useState<number>(0);
 
   const totalCards = services.length;
-  const visibleLg = 4;
 
   // Loop functionality
   const prev = () => {

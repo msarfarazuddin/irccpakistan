@@ -1,10 +1,15 @@
 "use client";
 
 import type { ReactNode } from "react";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
-import WhatsAppWidget from "@/app/components/layout/WhatsAppWidget";
+
+const WhatsAppWidget = dynamic(
+  () => import("@/app/components/layout/WhatsAppWidget"),
+  { ssr: false }
+);
 
 type ConditionalLayoutProps = {
   children: ReactNode;

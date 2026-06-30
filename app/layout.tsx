@@ -26,23 +26,6 @@ const geistSans = localFont({
   display: "swap",
 });
 
-const geistMono = localFont({
-  src: [
-    {
-      path: "../node_modules/next/dist/next-devtools/server/font/geist-mono-latin.woff2",
-      weight: "100 900",
-      style: "normal",
-    },
-    {
-      path: "../node_modules/next/dist/next-devtools/server/font/geist-mono-latin-ext.woff2",
-      weight: "100 900",
-      style: "normal",
-    },
-  ],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
-
 const neueMontreal = localFont({
   src: [
     {
@@ -79,10 +62,10 @@ export default function RootLayout({
         {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -92,7 +75,7 @@ export default function RootLayout({
         </Script>
 
         {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){
               w[l]=w[l]||[];
@@ -110,7 +93,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${neueMontreal.variable} antialiased`}
+        className={`${geistSans.variable} ${neueMontreal.variable} antialiased`}
         suppressHydrationWarning
       >
         <GlobalSchema />
