@@ -48,6 +48,24 @@ function parseEmailList(value: string | null) {
     .filter(Boolean);
 }
 
+function formatEmailError(error: unknown) {
+  const err = error as {
+    code?: string;
+    message?: string;
+    response?: string;
+  };
+  const message = [err.message, err.response].filter(Boolean).join(" ").trim();
+
+  if (
+    message.includes("Invalid login") ||
+    message.includes("Username and Password not accepted")
+  ) {
+    return "SMTP login failed. Check the Gmail app password and sender account settings.";
+  }
+
+  return message || "Unable to send email notification.";
+}
+
 function formatSheetsError(error: unknown) {
   const err = error as {
     code?: number;
@@ -100,6 +118,11 @@ function getMailTransporter() {
   const rawPort = Number(getEnv("SMTP_PORT"));
   const port = Number.isFinite(rawPort) ? rawPort : 587;
   const secure = getEnv("SMTP_SECURE") === "true" ? true : port === 465;
+  const password = getEnv("SMTP_PASS")!;
+  const normalizedPassword =
+    getEnv("SMTP_HOST") === "smtp.gmail.com"
+      ? password.replace(/\s+/g, "")
+      : password;
 
   mailTransporter = nodemailer.createTransport({
     host: getEnv("SMTP_HOST")!,
@@ -107,7 +130,7 @@ function getMailTransporter() {
     secure,
     auth: {
       user: getEnv("SMTP_USER")!,
-      pass: getEnv("SMTP_PASS")!,
+      pass: normalizedPassword,
     },
   });
 
@@ -192,8 +215,6 @@ export async function POST(request: Request) {
       );
     }
 
-    const transporter = getMailTransporter();
-
     const from = getEnv("SMTP_FROM") || getEnv("SMTP_USER")!;
     const subject =
       getEnv("CONTACT_EMAIL_SUBJECT") ||
@@ -216,15 +237,40 @@ export async function POST(request: Request) {
       .filter(Boolean)
       .join("\n");
 
-    await transporter.sendMail({
-      from,
-      to: recipients,
-      subject,
-      text,
-    });
+    let emailError: string | null = null;
+    try {
+      const transporter = getMailTransporter();
+      await transporter.sendMail({
+        from,
+        to: recipients,
+        subject,
+        text,
+      });
+    } catch (error) {
+      emailError = formatEmailError(error);
+      console.error("Email send error:", error);
+    }
 
-    if (sheetError) {
-      return NextResponse.json({ error: `${sheetError} (Email sent)` }, { status: 500 });
+    if (sheetError && emailError) {
+      return NextResponse.json(
+        { error: `${sheetError} Also, ${emailError}` },
+        { status: 500 }
+      );
+    }
+
+    if (emailError && missingSheetsEnv.length > 0) {
+      return NextResponse.json(
+        { error: `Email failed and Google Sheets is not configured. ${emailError}` },
+        { status: 500 }
+      );
+    }
+
+    if (emailError && !sheetError) {
+      console.warn("Consultation saved without email notification:", emailError);
+    }
+
+    if (sheetError && !emailError) {
+      console.warn("Consultation emailed without Google Sheets save:", sheetError);
     }
 
     return NextResponse.json({ ok: true });
