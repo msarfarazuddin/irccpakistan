@@ -1149,36 +1149,7 @@ const blogPosts: BlogPost[] = [
           " directly through IRCC Pakistan.",
         ],
       },
-      { type: "h3", text: "Dr. Yousuf Memon - Senior Consultant Interventional Radiologist" },
-      {
-        type: "p",
-        text: "Dr. Yousuf Memon is known for minimally invasive vascular and non-vascular procedures with a patient-focused planning approach. Women exploring non-surgical treatment often value interventional radiologists who can explain image-guided options clearly and match treatment to symptom burden and recovery goals.",
-      },
-      {
-        type: "ul",
-        items: [
-          "Experience in image-guided minimally invasive procedures",
-          "Focus on safer alternatives to traditional surgery",
-          "Personalized consultation style",
-          "Advanced diagnostic and interventional techniques",
-          "Experience with complex vascular and embolization cases",
-        ],
-      },
-      { type: "h3", text: "Dr. Imtiaz Ahmad - Experienced Interventional Radiology Specialist" },
-      {
-        type: "p",
-        text: "Dr. Imtiaz Ahmad is recognized for modern interventional radiology techniques and targeted, minimally invasive vascular treatments. Patients comparing embolization-based care may also consider specialists with experience in precision-guided therapies and short-stay recovery pathways.",
-      },
-      {
-        type: "ul",
-        items: [
-          "Skilled in embolization and vascular interventions",
-          "Uses advanced imaging-guided treatment methods",
-          "Focus on minimally invasive patient care",
-          "Experience with complex interventional cases",
-          "Emphasis on shorter hospital stay and smoother recovery",
-        ],
-      },
+      
       {
         type: "p",
         text: "Because hospital affiliations and procedure availability can change, patients should always verify a doctor's current clinic, operating privileges, and fibroid-specific experience before booking treatment.",
