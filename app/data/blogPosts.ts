@@ -1119,7 +1119,7 @@ const blogPosts: BlogPost[] = [
         type: "p",
         text: "Seeing a specialist is especially useful if you have multiple fibroids, heavy bleeding causing anemia, strong pressure symptoms, or a strong preference to avoid major surgery.",
       },
-      { type: "h2", text: "Top Fibroid Doctors in Karachi: 2026 Guide", id: "doctor-profiles" },
+      { type: "h2", text: "Top Fibroid Doctor in Karachi: 2026 Guide", id: "doctor-profiles" },
       { type: "h3", text: "Dr. Shahbaz Ahmed Qazi - Leading Interventional Radiologist" },
       {
         type: "p",
