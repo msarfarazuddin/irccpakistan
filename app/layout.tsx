@@ -47,7 +47,10 @@ export const metadata: Metadata = {
   description:
     "Pakistan's leading interventional radiology and vascular treatment center offering minimally invasive procedures including UFE, varicocele embolization, thyroid RFA, and more.",
   verification: {
-    google: "h-Pw04SMHXptLYk79Gq_pBQnndxmyeY3JWLCSwRvL5A",
+    google: [
+      "h-Pw04SMHXptLYk79Gq_pBQnndxmyeY3JWLCSwRvL5A",
+      "uXr0IC6pMrt_2DKcNZwGXZXhFdRwc6JI76JFf13KMjs",
+    ],
   },
 };
 

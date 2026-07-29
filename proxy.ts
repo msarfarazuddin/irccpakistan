@@ -88,6 +88,12 @@ const goneResponseHeaders = {
 } as const;
 
 export function proxy(request: NextRequest) {
+  const hostRedirect = getHostRedirectUrl(request);
+
+  if (hostRedirect) {
+    return NextResponse.redirect(hostRedirect, 308);
+  }
+
   if (isGonePath(request.nextUrl.pathname)) {
     return new NextResponse("Gone", {
       status: 410,
@@ -120,6 +126,20 @@ function getRedirectDestination(pathname: string) {
   } catch {
     return undefined;
   }
+}
+
+function getHostRedirectUrl(request: NextRequest) {
+  const hostname = request.nextUrl.hostname.toLowerCase();
+
+  if (hostname !== "irccpakistan.com") {
+    return undefined;
+  }
+
+  const url = request.nextUrl.clone();
+  url.hostname = "www.irccpakistan.com";
+  url.protocol = "https:";
+
+  return url;
 }
 
 export const config = {

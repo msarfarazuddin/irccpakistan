@@ -10,7 +10,7 @@ export const resolveSiteUrl = () => {
     process.env.SITE_URL ||
     process.env.VERCEL_PROJECT_PRODUCTION_URL ||
     process.env.VERCEL_URL ||
-    "https://irccpakistan.com";
+    "https://www.irccpakistan.com";
 
   const withProtocol = rawUrl.startsWith("http") ? rawUrl : `https://${rawUrl}`;
   return withProtocol.replace(/\/+$/, "");
