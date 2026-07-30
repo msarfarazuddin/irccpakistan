@@ -129,17 +129,43 @@ function getRedirectDestination(pathname: string) {
 }
 
 function getHostRedirectUrl(request: NextRequest) {
+  const canonicalHost = getCanonicalHost();
+
+  if (!canonicalHost) {
+    return undefined;
+  }
+
   const hostname = request.nextUrl.hostname.toLowerCase();
 
-  if (hostname !== "irccpakistan.com") {
+  if (hostname === canonicalHost) {
     return undefined;
   }
 
   const url = request.nextUrl.clone();
-  url.hostname = "www.irccpakistan.com";
+  url.hostname = canonicalHost;
   url.protocol = "https:";
 
   return url;
+}
+
+function getCanonicalHost() {
+  const rawUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.SITE_URL ||
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ||
+    process.env.VERCEL_URL;
+
+  if (!rawUrl) {
+    return undefined;
+  }
+
+  const withProtocol = rawUrl.startsWith("http") ? rawUrl : `https://${rawUrl}`;
+
+  try {
+    return new URL(withProtocol).hostname.toLowerCase();
+  } catch {
+    return undefined;
+  }
 }
 
 export const config = {
