@@ -3,7 +3,6 @@
 import { useState } from "react";
 import {
   FiAward,
-  FiChevronRight,
   FiClipboard,
   FiFileText,
   FiHeadphones,
@@ -133,26 +132,7 @@ export default function PatientJourneySection() {
           </p>
         </div>
 
-        <div className="mt-12 hidden items-center lg:flex">
-          {patientJourneySteps.map((step, index) => (
-            <div key={step.number} className="flex min-w-0 flex-1 items-center">
-              <div className="h-px flex-1 border-t border-dashed border-[#bfdbfe]" />
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0e58a8] text-lg font-semibold text-white">
-                {index + 1}
-              </div>
-              {index < patientJourneySteps.length - 1 ? (
-                <>
-                  <div className="mx-3 h-px flex-1 border-t border-dashed border-[#bfdbfe]" />
-                  <FiChevronRight className="mr-3 h-5 w-5 shrink-0 text-[#0e58a8]" />
-                </>
-              ) : (
-                <div className="h-px flex-1 border-t border-dashed border-[#bfdbfe]" />
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="-mx-4 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:-mx-6 sm:px-6 lg:mx-0 lg:grid lg:overflow-visible lg:px-0 lg:pb-0 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-7">
+        <div className="-mx-4 mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 pt-6 sm:-mx-6 sm:px-6 lg:mx-0 lg:grid lg:overflow-visible lg:px-0 lg:pb-0 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-7">
           {patientJourneySteps.map((step) => {
             const Icon = step.icon;
             const isExpanded = expandedStep === step.number;
@@ -160,19 +140,23 @@ export default function PatientJourneySection() {
             return (
               <article
                 key={step.number}
-                className="flex min-h-[344px] w-[88vw] min-w-[88vw] snap-center flex-col items-center rounded-[24px] border border-[#dbeafe] bg-white px-5 pb-4 pt-6 text-center sm:w-[420px] sm:min-w-[420px] lg:min-w-0 lg:w-auto"
+                className="relative flex min-h-[344px] w-[88vw] min-w-[88vw] snap-center flex-col items-start rounded-[24px] border border-[#0e58a8] bg-[#0e58a8] px-5 pb-4 pt-10 text-left text-white shadow-[0_12px_30px_rgba(14,88,168,0.16)] sm:w-[420px] sm:min-w-[420px] lg:min-w-0 lg:w-auto"
               >
-                <div className="mt-1 flex h-[86px] w-[86px] items-center justify-center rounded-full bg-[#eff6ff] text-[#0e58a8]">
+                <div className="absolute left-1/2 top-0 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-[#f7fbfc] bg-[#0b4a8d] text-lg font-semibold text-white shadow-sm">
+                  {step.number.replace(/^0/, "")}
+                </div>
+
+                <div className="mt-1 flex h-[65px] w-[65px] items-center justify-center rounded-full bg-white/15 text-white">
                   <Icon className="h-9 w-9" />
                 </div>
 
-                <h3 className="mt-5 text-[16px] font-medium leading-7 text-[#0d1728]">
+                <h3 className="mt-5 text-[16px] font-medium leading-7 text-white">
                   {step.title}
                 </h3>
                 <div className="mt-3 h-0.5 w-11 rounded-full bg-[#94cdc7]" />
 
-                <div className="mt-4 flex flex-1 flex-col items-center">
-                  <p className="w-full text-[13px] font-normal leading-6 text-[#4b617a] lg:max-w-[18ch]">
+                <div className="mt-4 flex w-full flex-1 flex-col items-start">
+                  <p className="w-full text-[13px] font-normal leading-6 text-white/85 lg:max-w-[18ch]">
                     {step.preview}
                   </p>
 
@@ -184,7 +168,7 @@ export default function PatientJourneySection() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="w-full text-[13px] font-normal leading-6 text-[#4b617a] lg:max-w-[18ch]">
+                      <p className="w-full text-[13px] font-normal leading-6 text-white/85 lg:max-w-[18ch]">
                         {step.detail}
                       </p>
                     </div>
@@ -197,13 +181,13 @@ export default function PatientJourneySection() {
                         current === step.number ? null : step.number
                       )
                     }
-                    className="mt-3 text-[13px] font-semibold text-[#0e58a8] transition hover:text-[#0b4a8d]"
+                    className="mt-3 text-[13px] font-semibold text-white underline-offset-4 transition hover:text-[#dbeafe] hover:underline"
                   >
                     {isExpanded ? "Read less" : "Read more"}
                   </button>
                 </div>
 
-                <div className="mt-4 flex w-full items-center justify-center gap-2 rounded-[16px] bg-[#f5f9ff] px-3 py-3 text-[12px] font-semibold text-[#0e58a8]">
+                <div className="mt-4 flex w-full items-center justify-start gap-2 rounded-[16px] bg-white/15 px-3 py-3 text-[12px] font-semibold text-white">
                   <Icon className="h-4 w-4 shrink-0" />
                   <span>{step.label}</span>
                 </div>
