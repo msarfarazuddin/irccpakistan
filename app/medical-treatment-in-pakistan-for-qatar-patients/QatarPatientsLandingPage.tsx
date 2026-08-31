@@ -270,35 +270,7 @@ export default function QatarPatientsLandingPage() {
                   ))}
                 </select>
 
-                <label className="block rounded-[18px] border border-dashed border-white/45 bg-white/10 p-4 text-left">
-                  <div className="flex items-center gap-3">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-white/12 text-white">
-                      <FiFileText className="h-5 w-5" />
-                    </span>
-                    <div>
-                      <p className="text-sm font-semibold text-white">
-                        Upload Medical Reports
-                      </p>
-                      <p className="mt-1 text-xs leading-5 text-white/78">
-                        Attach PDF, JPG or PNG files with your request.
-                      </p>
-                    </div>
-                  </div>
-                  <input
-                    type="file"
-                    multiple
-                    accept=".pdf,.jpg,.jpeg,.png,.webp"
-                    onChange={(event) =>
-                      setSelectedReports(Array.from(event.target.files ?? []))
-                    }
-                    className="mt-3 block w-full text-sm text-white file:mr-4 file:rounded-full file:border-0 file:bg-white file:px-4 file:py-2 file:font-semibold file:text-[#0e58a8] hover:file:bg-[#eff6ff]"
-                  />
-                  {selectedReports.length ? (
-                    <p className="mt-3 text-xs leading-5 text-white/78">
-                      {selectedReports.map((file) => file.name).join(", ")}
-                    </p>
-                  ) : null}
-                </label>
+          
 
                 <button
                   type="submit"
