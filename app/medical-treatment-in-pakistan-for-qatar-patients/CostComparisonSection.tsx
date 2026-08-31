@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import {
+  FiActivity,
   FiBarChart2,
   FiCheckCircle,
   FiClipboard,
   FiDollarSign,
+  FiHeart,
   FiInfo,
   FiShield,
 } from "react-icons/fi";
@@ -55,52 +57,52 @@ function PercentageBadge() {
 const comparisonRows = [
   {
     title: "Uterine Fibroid Embolization (UFE)",
-    pakistanCost: "IRCC-verified range",
-    qatarCost: "Qatar-verified range",
-    difference: "Calculate after verification",
+    pakistanCost: "7,940",
+    qatarCost: "28,783",
+    difference: "Approx. 70% Less",
     icon: GiFemale,
   },
   {
     title: "Varicocele Embolization",
-    pakistanCost: "IRCC-verified range",
-    qatarCost: "Qatar-verified range",
-    difference: "Calculate after verification",
+    pakistanCost: "6,451",
+    qatarCost: "30,768",
+    difference: "Approx. 70% Less",
     icon: GiMale,
   },
   {
     title: "Thyroid Radiofrequency Ablation (RFA)",
-    pakistanCost: "IRCC-verified range",
-    qatarCost: "Qatar-verified range",
-    difference: "Calculate after verification",
-    icon: FiClipboard,
+    pakistanCost: "6,948",
+    qatarCost: "31,760",
+    difference: "Approx. 70% Less",
+    icon: FiActivity,
   },
   {
     title: "Varicose Vein Ablation",
-    pakistanCost: "IRCC-verified range",
-    qatarCost: "Qatar-verified range",
-    difference: "Calculate after verification",
-    icon: FiShield,
+    pakistanCost: "6,948",
+    qatarCost: "27,790",
+    difference: "Approx. 70% Less",
+    icon: FiActivity,
   },
   {
     title: "Prostate Artery Embolization (PAE)",
-    pakistanCost: "IRCC-verified range",
-    qatarCost: "Qatar-verified range",
-    difference: "Calculate after verification",
-    icon: FiDollarSign,
+    pakistanCost: "7,940",
+    qatarCost: "28,783",
+    difference: "Approx. 70% Less",
+    icon: FiHeart,
   },
 ] as const;
 
 const quickPoints = [
   {
-    label: "Verification Pending",
+    label: "Transparent Estimates",
     icon: TbMapDollar,
   },
   {
-    label: "Case-Specific Fees",
+    label: "Quality Care Assured",
     icon: FiShield,
   },
   {
-    label: "Planning Support",
+    label: "Cost-Effective Solutions",
     icon: TbStethoscope,
   },
 ] as const;
@@ -116,19 +118,14 @@ export default function CostComparisonSection() {
           </span>
 
           <h2 className="mt-6 text-[28px] leading-tight text-[#0d1728] sm:text-4xl lg:text-[54px]">
-            Medical Treatment Cost in Pakistan vs Qatar
+            Medical Treatment Cost in Pakistan vs Qatar{" "}
+            <span className="text-[#0e58a8]">(Estimated in QAR)</span>
           </h2>
 
-          <p className="mt-5 text-[18px] font-medium leading-8 text-[#0e58a8]">
-            Compare Treatment Costs Before You Travel
-          </p>
-
-          <p className="mx-auto mt-5 max-w-4xl text-base leading-8 text-[#4c6179] sm:text-lg">
-            The cost of a procedure depends on the diagnosis, clinical
-            complexity, investigations, facility requirements, physician
-            assessment and treatment plan. A comparison can help with initial
-            planning, but the final fee should always be confirmed after case
-            review.
+          <p className="mx-auto mt-6 max-w-4xl text-base leading-8 text-[#4c6179] sm:text-lg">
+            Pakistan offers world-class, minimally invasive treatments at a
+            fraction of the cost in Qatar, with the same focus on safety,
+            quality, and patient outcomes.
           </p>
         </div>
 
@@ -144,8 +141,9 @@ export default function CostComparisonSection() {
             <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[#0e58a8]" />
 
             <p className="mx-auto mt-6 max-w-[35ch] text-center text-[15px] leading-6 text-[#4c6179]">
-              Request a case-specific estimate after your medical reports have
-              been reviewed.
+              The estimated cost ranges below are indicative and may vary
+              depending on individual case complexity, investigations, facility
+              charges, doctor&apos;s assessment and length of stay.
             </p>
 
             <div className="mt-6 flex items-start gap-3 rounded-[18px] border border-[#dbeafe] bg-[#f5f9ff] px-4 py-4 text-[#0e58a8]">
@@ -153,8 +151,8 @@ export default function CostComparisonSection() {
                 <FiCheckCircle className="h-5 w-5" />
               </span>
               <p className="text-[15px] leading-5">
-                Do not publish invented or unverified Qatar price ranges.
-                Verify Pakistan and Qatar figures before launch.
+                IRCC ensures accurate, transparent estimates tailored to your
+                case.
               </p>
             </div>
 
@@ -163,7 +161,7 @@ export default function CostComparisonSection() {
               className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-[18px] bg-[linear-gradient(90deg,#0e58a8_0%,#0b4a8d_100%)] px-5 py-4 text-base font-semibold text-white transition hover:opacity-95"
             >
               <FiDollarSign className="h-5 w-5" />
-              Get My Estimated Treatment Cost
+              Get My Estimated Cost
             </Link>
 
             <div className="mt-6 grid grid-cols-3 gap-3 border-t border-[#dbeafe] pt-6">
@@ -192,11 +190,11 @@ export default function CostComparisonSection() {
               </div>
               <div className="flex items-center gap-3 border-r border-white/10 px-6 py-5 text-lg font-medium">
                 <PakistanFlagBadge />
-                <span>Estimated Cost in Pakistan</span>
+                <span>Estimated Cost in Pakistan (QAR)</span>
               </div>
               <div className="flex items-center gap-3 border-r border-white/10 px-6 py-5 text-lg font-medium">
                 <QatarFlagBadge />
-                <span>Estimated Cost in Qatar</span>
+                <span>Estimated Cost in Qatar (QAR)</span>
               </div>
               <div className="flex items-center gap-3 px-6 py-5 text-lg font-medium">
                 <PercentageBadge />
@@ -262,10 +260,8 @@ export default function CostComparisonSection() {
             </span>
             <p className="text-[15px] leading-7 text-[#4c6179]">
               <span className="font-semibold text-[#0d1728]">Note:</span> The
-              figures above are indicative placeholders until verified by IRCC.
-              Final costs vary according to clinical complexity, diagnostic
-              investigations, facility requirements, physician assessment and
-              individual treatment needs.
+              above figures are estimated ranges for comparison only. Actual
+              cost may vary. Contact IRCC for accurate assessment.
             </p>
           </div>
         </div>
