@@ -15,6 +15,7 @@ type ContactPayload = {
   preferredDateTime?: string;
   message?: string;
   page?: string;
+  medicalReportNames?: string;
 };
 
 const REQUIRED_EMAIL_ENV = [
@@ -148,7 +149,34 @@ export async function POST(request: Request) {
       }
     }
 
-    const body = (await request.json()) as ContactPayload;
+    const contentType = request.headers.get("content-type") || "";
+    let body: ContactPayload = {};
+    let attachmentFiles: File[] = [];
+
+    if (contentType.includes("multipart/form-data")) {
+      const formData = await request.formData();
+      body = {
+        age: String(formData.get("age") || ""),
+        city: String(formData.get("city") || ""),
+        conditionConcern: String(formData.get("conditionConcern") || ""),
+        fullName: String(formData.get("fullName") || ""),
+        phone: String(formData.get("phone") || ""),
+        disease: String(formData.get("disease") || ""),
+        email: String(formData.get("email") || ""),
+        preferredDateTime: String(formData.get("preferredDateTime") || ""),
+        message: String(formData.get("message") || ""),
+        page: String(formData.get("page") || ""),
+      };
+      attachmentFiles = formData
+        .getAll("medicalReports")
+        .filter((value): value is File => value instanceof File && value.size > 0);
+      if (attachmentFiles.length > 0) {
+        body.medicalReportNames = attachmentFiles.map((file) => file.name).join(", ");
+      }
+    } else {
+      body = (await request.json()) as ContactPayload;
+    }
+
     const age = (body.age || "").trim();
     const city = (body.city || "").trim();
     const conditionConcern = (body.conditionConcern || body.disease || "").trim();
@@ -231,6 +259,9 @@ export async function POST(request: Request) {
       preferredDateTime ? `Preferred Date / Time: ${preferredDateTime}` : null,
       email ? `Email: ${email}` : null,
       `Message: ${message}`,
+      body.medicalReportNames
+        ? `Medical Reports: ${body.medicalReportNames}`
+        : null,
       page ? `Page: ${page}` : null,
       `Timestamp: ${timestamp}`,
     ]
@@ -245,6 +276,13 @@ export async function POST(request: Request) {
         to: recipients,
         subject,
         text,
+        attachments: await Promise.all(
+          attachmentFiles.map(async (file) => ({
+            filename: file.name,
+            content: Buffer.from(await file.arrayBuffer()),
+            contentType: file.type || undefined,
+          }))
+        ),
       });
     } catch (error) {
       emailError = formatEmailError(error);
