@@ -142,7 +142,7 @@ export default function PatientJourneySection() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="w-full text-[13px] font-normal leading-6 text-white/85 lg:max-w-[18ch]">
+                      <p className="w-full text-[13px] font-normal leading-6 text-white/85 ">
                         {step.detail}
                       </p>
                     </div>
