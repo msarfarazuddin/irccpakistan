@@ -130,7 +130,7 @@ export default function PatientJourneySection() {
                 <div className="mt-3 h-0.5 w-11 rounded-full bg-[#94cdc7]" />
 
                 <div className="mt-4 flex w-full flex-1 flex-col items-start">
-                  <p className="w-full text-[13px] font-normal leading-6 text-white/85 lg:max-w-[18ch]">
+                  <p className="w-full text-[13px] font-normal leading-6 text-white/85 ">
                     {step.preview}
                   </p>
 
