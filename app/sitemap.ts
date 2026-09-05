@@ -41,6 +41,9 @@ const staticRoutes: StaticRoute[] = [
   { path: "/Vascular-Malformation-Treatment", changeFrequency: "monthly", priority: 0.7 },
   { path: "/Varicocele-Embolization", changeFrequency: "monthly", priority: 0.75 },
   { path: "/Varicose-Vein-Ablation", changeFrequency: "monthly", priority: 0.75 },
+  { path: "/medical-treatment-in-pakistan-for-qatar-patients", changeFrequency: "monthly", priority: 0.75 },
+  { path: "/medical-treatment-in-pakistan-from-uae", changeFrequency: "monthly", priority: 0.75 },
+  { path: "/medical-treatment-in-pakistan-for-saudi-patients", changeFrequency: "monthly", priority: 0.75 },
 ];
 
 const toUtcDate = (date: string) => new Date(`${date}T00:00:00Z`);

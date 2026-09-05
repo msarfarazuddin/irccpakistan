@@ -18,7 +18,7 @@ const data: Testimonial[] = [
     name: "Ayesha Malik",
     location: "Peshawar",
     rating: 5,
-    poster: "/Ayesha Malik.jpg",
+    poster: "/Ayesha.jpg",
     quote:
       "I was facing severe fibroid symptoms that were affecting my daily life. After undergoing Uterine Fibroid Embolization, my condition improved remarkably without surgery. The procedure was comfortable, and recovery was very quick. I truly appreciate the care and professionalism of the medical team.",
   },
@@ -27,7 +27,7 @@ const data: Testimonial[] = [
     name: "Ahmed Raza",
     location: "Islamabad",
     rating: 5,
-    poster: "/three (2).png",
+    poster: "/Ahmed.jpg",
     quote:
       "I had been dealing with discomfort due to varicocele for a long time. The embolization procedure was simple and minimally invasive, and I experienced relief within a short period. The doctors explained everything clearly and made the entire process stress-free. Highly satisfied with the results.",
   },
@@ -36,7 +36,7 @@ const data: Testimonial[] = [
     name: "Sana Khan",
     location: "Islamabad",
     rating: 5,
-    poster: "/Sana Khan.jpg",
+    poster: "/Sana.jpg",
     quote:
       "I was worried about thyroid treatment options until I learned about Radiofrequency Ablation. The procedure was safe, painless, and required no surgery. My symptoms improved significantly, and recovery was smooth. I highly recommend this treatment and the medical team.",
   },
@@ -45,7 +45,7 @@ const data: Testimonial[] = [
     name: "Muhammad Usman",
     location: "Islamabad",
     rating: 5,
-    poster: "/Muhammad Usman.jpg",
+    poster: "/Usman.jpg",
     quote:
       "My leg pain and visible veins were getting worse, but Varicose Vein Ablation completely changed my condition. The treatment was quick, and I was able to walk normally the same day. Excellent experience and very professional medical care.",
   },

@@ -140,8 +140,8 @@ export default function Footer() {
           <Pill href="tel:+923310232883" icon={<CallIcon />}>
             +92-3310232883
           </Pill>
-          <Pill href="tel:+03340005020" icon={<CallIcon />}>
-            +0334-0005020
+          <Pill href="tel:+92340005020" icon={<CallIcon />}>
+            +92-340005020
           </Pill>
           <Pill
             href="https://maps.google.com/?q=153/1%20F%20Block%20Phase%205%20D.H.A,%20Lahore%20Pakistan"

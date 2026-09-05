@@ -78,7 +78,7 @@ export default function ContactPageClient() {
             <div>
               <div className="rounded-2xl  bg-white p-6 sm:p-8 lg:p-10 ">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#0B1220]">
-                  IRCC Pakistan - interventional radiology clinical care
+                  IRCC Pakistan - Interventional Radiology Clinical Care
                 </h2>
 
                 <p className="mt-3 text-[#5B6577] leading-7">
