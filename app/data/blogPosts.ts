@@ -48,7 +48,7 @@ const blogPosts: BlogPost[] = [
       "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
     metaDescription:
       "Thinking about fibroid surgery? Learn how Uterine Fibroid Embolization (UFE) treats fibroids in Pakistan without a hysterectomy, incisions, or long recovery.",
-    image: "/Uterine Fibroid Embolization in Pakistan.png",
+    image: "/Uterine Fibroid Embolization Guide.png",
     imageAlt: "Uterine Fibroid Embolization in Pakistan",
     author: "Dr Shahbaz Ahmed Qazi",
     readTime: "8 min read",
@@ -95,7 +95,7 @@ const blogPosts: BlogPost[] = [
             "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
           description:
             "Thinking about fibroid surgery? Learn how Uterine Fibroid Embolization (UFE) treats fibroids in Pakistan without a hysterectomy, incisions, or long recovery.",
-          image: ["https://irccpakistan.com/Uterine%20Fibroid%20Embolization%20in%20Pakistan.png"],
+          image: ["https://irccpakistan.com/Uterine%20Fibroid%20Embolization%20Guide.png"],
           datePublished: "2026-09-17",
           dateModified: "2026-09-17",
           author: {
@@ -312,7 +312,7 @@ const blogPosts: BlogPost[] = [
       "Varicocele Embolization in Pakistan: Non-Surgical Guide for Men",
     metaDescription:
       "Varicocele embolization in Pakistan treats testicular pain and infertility without surgery, incisions, or general anesthesia. Learn how it works, recovery, and results.",
-    image: "/Varicocele Embolization in Pakistan.png",
+    image: "/Varicocele Embolization Expert Care in Pakistan.png",
     imageAlt: "Varicocele Embolization in Pakistan",
     author: "Dr Shahbaz Ahmed Qazi",
     readTime: "9 min read",
@@ -369,7 +369,7 @@ const blogPosts: BlogPost[] = [
             "Varicocele Embolization in Pakistan: The Non-Surgical Treatment Guide for Men",
           description:
             "Varicocele embolization in Pakistan treats testicular pain and infertility without surgery, incisions, or general anesthesia. Learn how it works, recovery, and results.",
-          image: ["https://irccpakistan.com/Varicocele%20Embolization%20in%20Pakistan.png"],
+          image: ["https://irccpakistan.com/Varicocele%20Embolization%20Expert%20Care%20in%20Pakistan.png"],
           author: { "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi" },
           reviewedBy: {
             "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi",
