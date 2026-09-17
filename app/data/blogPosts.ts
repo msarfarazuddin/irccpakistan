@@ -32,11 +32,563 @@ export type BlogPost = {
   readTime: string;
   metaTitle?: string;
   metaDescription?: string;
+  schema?: Record<string, unknown>;
   faq?: BlogFaqItem[];
   content: Array<string | BlogContentBlock>;
 };
 
 const blogPosts: BlogPost[] = [
+  {
+    slug: "uterine-fibroid-embolization-pakistan-complete-guide",
+    title: "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
+    date: "2026-09-17",
+    excerpt:
+      "Thinking about fibroid surgery? Learn how Uterine Fibroid Embolization treats fibroids in Pakistan without a hysterectomy, incisions, or long recovery.",
+    metaTitle:
+      "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
+    metaDescription:
+      "Thinking about fibroid surgery? Learn how Uterine Fibroid Embolization (UFE) treats fibroids in Pakistan without a hysterectomy, incisions, or long recovery.",
+    image: "/Uterine Fibroid Embolization in Pakistan.png",
+    imageAlt: "Uterine Fibroid Embolization in Pakistan",
+    author: "Dr Shahbaz Ahmed Qazi",
+    readTime: "8 min read",
+    faq: [
+      {
+        question: "Is UFE painful?",
+        answer:
+          "Most of the discomfort happens after the procedure, not during it, since it is done under sedation. Cramping in the first two to three days is common and is controlled with pain medication.",
+      },
+      {
+        question: "How long is recovery after UFE?",
+        answer:
+          "Most women return to light activity within a week and to normal daily activity within one to two weeks, which is significantly shorter than recovery from a hysterectomy.",
+      },
+      {
+        question: "Will my fibroid come back after UFE?",
+        answer:
+          "The treated fibroid tissue itself does not grow back once its blood supply is cut off. New fibroids can occasionally develop over time, which is true after most fibroid treatments other than hysterectomy.",
+      },
+      {
+        question: "Can I get pregnant after UFE?",
+        answer:
+          "Many women do conceive after UFE. Individual outcomes depend on fibroid location and size, so this should be discussed directly with your interventional radiologist if pregnancy is a future goal.",
+      },
+      {
+        question: "Is UFE available outside Karachi, Lahore, and Islamabad?",
+        answer:
+          "IRCC Pakistan sees patients from across the country, including those traveling in from other cities and from overseas.",
+      },
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id":
+            "https://irccpakistan.com/blog/uterine-fibroid-embolization-pakistan-complete-guide#article",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://irccpakistan.com/blog/uterine-fibroid-embolization-pakistan-complete-guide",
+          },
+          headline:
+            "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
+          description:
+            "Thinking about fibroid surgery? Learn how Uterine Fibroid Embolization (UFE) treats fibroids in Pakistan without a hysterectomy, incisions, or long recovery.",
+          image: ["https://irccpakistan.com/Uterine%20Fibroid%20Embolization%20in%20Pakistan.png"],
+          datePublished: "2026-09-17",
+          dateModified: "2026-09-17",
+          author: {
+            "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi",
+          },
+          reviewedBy: {
+            "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi",
+          },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+          inLanguage: "en-PK",
+          articleSection: "Women's Health / Fibroid Treatment",
+          keywords: [
+            "uterine fibroid embolization pakistan",
+            "Uterine Fibroid Embolization",
+            "UFE Pakistan",
+            "Non-Surgical Fibroid Treatment",
+            "Fibroid Treatment Without Surgery",
+            "Hysterectomy Alternative",
+            "Interventional Radiology Pakistan",
+          ],
+        },
+        {
+          "@type": "MedicalWebPage",
+          "@id":
+            "https://irccpakistan.com/blog/uterine-fibroid-embolization-pakistan-complete-guide#medicalwebpage",
+          url:
+            "https://irccpakistan.com/blog/uterine-fibroid-embolization-pakistan-complete-guide",
+          name:
+            "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
+          description:
+            "A medical guide explaining uterine fibroid embolization, how UFE works, candidacy, risks, fertility considerations, recovery and treatment availability in Pakistan.",
+          inLanguage: "en-PK",
+          about: {
+            "@type": "MedicalProcedure",
+            name: "Uterine Fibroid Embolization",
+            alternateName: "UFE",
+          },
+          author: { "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi" },
+          reviewedBy: {
+            "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi",
+          },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id":
+            "https://irccpakistan.com/blog/uterine-fibroid-embolization-pakistan-complete-guide#breadcrumb",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://irccpakistan.com/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://irccpakistan.com/blog" },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Uterine Fibroid Embolization in Pakistan",
+              item:
+                "https://irccpakistan.com/blog/uterine-fibroid-embolization-pakistan-complete-guide",
+            },
+          ],
+        },
+      ],
+    },
+    content: [
+      {
+        type: "p",
+        text:
+          "Medically reviewed content - IRCC Pakistan, under Dr. Shahbaz Ahmed Qazi, Consultant Interventional Radiologist.",
+      },
+      { type: "h2", text: "What Is Uterine Fibroid Embolization?" },
+      {
+        type: "p",
+        text:
+          "Uterine Fibroid Embolization, usually called UFE, is a non-surgical procedure that shrinks uterine fibroids by cutting off their blood supply. An interventional radiologist inserts a thin catheter into an artery, usually through the wrist or the groin, and guides it under X-ray imaging to the blood vessels feeding the fibroid. Tiny particles are then released into those vessels to block the blood flow.",
+      },
+      {
+        type: "p",
+        text:
+          "Without blood supply, the fibroid gradually shrinks, and most women see their symptoms improve within a few weeks to a few months. No incision is made into the uterus itself, which is the main reason UFE is considered an alternative to hysterectomy or open myomectomy for many women in Pakistan.",
+      },
+      { type: "h2", text: "Why This Matters for Women in Pakistan" },
+      {
+        type: "p",
+        text:
+          "A large number of women who visit a gynecologist for heavy periods, pelvic pressure, or an enlarged uterus are told that surgery is the only real option. In many cases, that conversation stops there and the non-surgical route is either not mentioned or not fully explained.",
+      },
+      {
+        type: "p",
+        text:
+          "This is partly why interventional radiology as a specialty is still newer in Pakistan than gynecology and general surgery, and partly because UFE requires equipment and training that is not available at every hospital.",
+      },
+      { type: "h2", text: "What Are Uterine Fibroids, in Simple Terms?" },
+      {
+        type: "p",
+        text:
+          "Fibroids are non-cancerous growths that develop in or on the wall of the uterus. They are extremely common, though many never cause symptoms and are never treated. Problems start when a fibroid grows large enough, or sits in a position, that it begins to interfere with daily life.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Periods that are heavier or longer than they used to be",
+          "Passing clots during menstruation",
+          "A feeling of pressure or fullness in the lower abdomen",
+          "Frequent urination caused by the fibroid pressing on the bladder",
+          "Lower back pain or pain during intercourse",
+          "Fatigue or low iron levels from ongoing blood loss",
+        ],
+      },
+      { type: "h2", text: "How the UFE Procedure Actually Works" },
+      { type: "h3", text: "Before the Procedure" },
+      {
+        type: "p",
+        text:
+          "The process starts with imaging, usually an ultrasound or MRI, to confirm the number, size, and position of the fibroids and to map out the blood vessels supplying them. This is also where the interventional radiologist checks whether UFE is suitable for that particular case.",
+      },
+      { type: "h3", text: "During the Procedure" },
+      {
+        type: "p",
+        text:
+          "UFE is typically done under local anesthesia with light sedation, so the patient is awake but comfortable and does not feel pain at the access site. A catheter, about the width of a strand of spaghetti, is threaded through the artery under continuous X-ray guidance until it reaches the vessels feeding the fibroid.",
+      },
+      {
+        type: "p",
+        text:
+          "Small embolic particles are then injected to block that blood supply. The procedure generally takes 45 minutes to an hour, and most patients go home the same day or after one night of observation.",
+      },
+      { type: "h3", text: "After the Procedure" },
+      {
+        type: "p",
+        text:
+          "It is normal to experience cramping and pelvic discomfort for the first few days. Most women return to light activity within a week and to full normal activity within one to two weeks, which is considerably faster than the four-to-six-week recovery typically associated with a hysterectomy.",
+      },
+      { type: "h2", text: "UFE vs. Hysterectomy: The Core Difference" },
+      {
+        type: "p",
+        text:
+          "A hysterectomy removes the uterus entirely, which permanently ends menstruation and the possibility of pregnancy. UFE leaves the uterus in place and only targets the fibroid's blood supply, so periods continue and, for many women, fertility is preserved.",
+      },
+      {
+        type: "p",
+        text:
+          "Beyond that, the practical differences that tend to matter most are recovery time, blood loss, and the need for general anesthesia. Surgery involves a longer hospital stay and a longer return to work; UFE is typically a day-case or overnight procedure with a shorter downtime.",
+      },
+      { type: "h2", text: "Who Is a Good Candidate for UFE?" },
+      {
+        type: "ul",
+        items: [
+          "Women with symptomatic fibroids causing heavy bleeding, pain, or pressure",
+          "Women who want to avoid surgery, general anesthesia, or a long hospital stay",
+          "Women who wish to keep their uterus, whether for future pregnancy or personal preference",
+          "Women who have been advised to consider hysterectomy and want a second opinion",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "UFE is not automatically the right fit for every case. Certain fibroid locations, very large fibroid burden, active pelvic infection, or specific fertility circumstances need a proper evaluation first.",
+      },
+      { type: "h2", text: "Is UFE Safe? What Are the Risks?" },
+      {
+        type: "p",
+        text:
+          "UFE has been performed internationally for more than two decades and is recognized as a safe, minimally invasive alternative to fibroid surgery. The most common side effect is post-embolization syndrome, which can include cramping, mild fever, and fatigue for a few days.",
+      },
+      {
+        type: "p",
+        text:
+          "Less common risks include infection, injury to the artery at the access site, or particles affecting blood flow to nearby tissue. These risks are discussed individually during consultation, based on age, fibroid size, and overall health.",
+      },
+      { type: "h2", text: "Does UFE Affect Fertility?" },
+      {
+        type: "p",
+        text:
+          "Many women have gone on to have successful pregnancies after UFE, and preserving the uterus is one of the procedure's main advantages over hysterectomy. Fertility outcomes can vary based on fibroid location and size, so women actively planning pregnancy should raise this during consultation.",
+      },
+      { type: "h2", text: "How Much Does UFE Cost in Pakistan?" },
+      {
+        type: "p",
+        text:
+          "Cost depends on fibroid size, number, and the complexity of the procedure, along with pre-procedure imaging and any hospital stay required. Because pricing varies case by case, IRCC Pakistan recommends booking a consultation for an accurate quote.",
+      },
+      { type: "h2", text: "Where Can You Get UFE in Pakistan?" },
+      {
+        type: "rich-p",
+        content: [
+          "IRCC Pakistan offers UFE through Dr. Shahbaz Ahmed Qazi at clinics in Karachi, Lahore, and Islamabad. You can also view treatment details on the ",
+          {
+            type: "link",
+            text: "Uterine Fibroid Embolization service page",
+            href: "/Uterine-Fibroid-Embolization",
+          },
+          " or visit the ",
+          { type: "link", text: "Female-Related Services page", href: "/female-clinic" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Book a Consultation" },
+      {
+        type: "rich-p",
+        content: [
+          "If you or someone you know has been told that surgery is the only option for fibroids, it is worth getting a second opinion before deciding. ",
+          { type: "link", text: "Book a consultation", href: "/get-consultation" },
+          " with IRCC Pakistan to find out whether UFE is right for your case.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "varicocele-embolization-pakistan-non-surgical-guide",
+    title:
+      "Varicocele Embolization in Pakistan: The Non-Surgical Treatment Guide for Men",
+    date: "2026-09-17",
+    excerpt:
+      "Varicocele embolization treats testicular pain and infertility without surgery, incisions, or general anesthesia. Learn how it works, recovery, and results.",
+    metaTitle:
+      "Varicocele Embolization in Pakistan: Non-Surgical Guide for Men",
+    metaDescription:
+      "Varicocele embolization in Pakistan treats testicular pain and infertility without surgery, incisions, or general anesthesia. Learn how it works, recovery, and results.",
+    image: "/Varicocele Embolization in Pakistan.png",
+    imageAlt: "Varicocele Embolization in Pakistan",
+    author: "Dr Shahbaz Ahmed Qazi",
+    readTime: "9 min read",
+    faq: [
+      {
+        question: "Is varicocele embolization painful?",
+        answer:
+          "No. The procedure is done under local anesthesia with a mild sedative, so there is little to no pain during the procedure itself. Some mild soreness at the access site is normal for a day or two afterward.",
+      },
+      {
+        question: "How long does varicocele embolization take?",
+        answer:
+          "The procedure usually takes 45 minutes to an hour, and since it is done on an outpatient basis, you go home the same day.",
+      },
+      {
+        question: "Will varicocele embolization improve my fertility?",
+        answer:
+          "In many cases, yes. Sperm count, motility, and quality often improve after treatment. Results vary by individual, and a personalised assessment is the best way to know what to expect.",
+      },
+      {
+        question: "Does varicocele embolization leave a scar?",
+        answer:
+          "No. It only requires a small needle access point at the groin or wrist, with no incision, no stitches, and no visible scarring.",
+      },
+      {
+        question: "How does varicocele embolization compare to surgery?",
+        answer:
+          "It offers a similar success rate, around 90 percent, with no general anesthesia, no incision, less risk of complications, and a faster recovery.",
+      },
+      {
+        question: "Can a varicocele come back after embolization?",
+        answer:
+          "Recurrence is uncommon, and the rate is comparable to surgical repair. Regular follow-up helps catch and manage this early if it happens.",
+      },
+      {
+        question: "Who performs varicocele embolization in Pakistan?",
+        answer:
+          "It is performed by an interventional radiologist, a specialist trained in image-guided, catheter-based procedures. IRCC Pakistan offers this treatment with clinics supporting patients across Pakistan.",
+      },
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id":
+            "https://irccpakistan.com/blog/varicocele-embolization-pakistan-non-surgical-guide#blogposting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              "https://irccpakistan.com/blog/varicocele-embolization-pakistan-non-surgical-guide",
+          },
+          headline:
+            "Varicocele Embolization in Pakistan: The Non-Surgical Treatment Guide for Men",
+          description:
+            "Varicocele embolization in Pakistan treats testicular pain and infertility without surgery, incisions, or general anesthesia. Learn how it works, recovery, and results.",
+          image: ["https://irccpakistan.com/Varicocele%20Embolization%20in%20Pakistan.png"],
+          author: { "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi" },
+          reviewedBy: {
+            "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi",
+          },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+          datePublished: "2026-09-17",
+          dateModified: "2026-09-17",
+          inLanguage: "en-PK",
+          articleSection: "Varicocele Treatment",
+          keywords: [
+            "varicocele embolization pakistan",
+            "varicocele embolization",
+            "varicocele treatment without surgery",
+            "varicocele and infertility",
+            "varicocele pain relief",
+            "non-surgical treatment pakistan",
+            "interventional radiology",
+          ],
+        },
+        {
+          "@type": "MedicalWebPage",
+          "@id":
+            "https://irccpakistan.com/blog/varicocele-embolization-pakistan-non-surgical-guide#medicalwebpage",
+          url:
+            "https://irccpakistan.com/blog/varicocele-embolization-pakistan-non-surgical-guide",
+          name:
+            "Varicocele Embolization in Pakistan: The Non-Surgical Treatment Guide for Men",
+          description:
+            "A medical guide explaining varicocele embolization, how the procedure works, recovery, fertility considerations, pain relief, candidacy and comparison with surgery.",
+          inLanguage: "en-PK",
+          about: {
+            "@type": "MedicalProcedure",
+            name: "Varicocele Embolization",
+            procedureType: "Minimally Invasive Procedure",
+          },
+          author: { "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi" },
+          reviewedBy: {
+            "@id": "https://irccpakistan.com/About#dr-shahbaz-ahmed-qazi",
+          },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id":
+            "https://irccpakistan.com/blog/varicocele-embolization-pakistan-non-surgical-guide#breadcrumb",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://irccpakistan.com/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://irccpakistan.com/blog" },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: "Varicocele Embolization in Pakistan",
+              item:
+                "https://irccpakistan.com/blog/varicocele-embolization-pakistan-non-surgical-guide",
+            },
+          ],
+        },
+      ],
+    },
+    content: [
+      {
+        type: "p",
+        text:
+          "If you have been told you need surgery for a varicocele, it is worth knowing that is no longer the only option. Varicocele embolization is a non-surgical, image-guided procedure that treats testicular pain, swelling, and fertility issues without a single cut, without general anesthesia, and without the weeks of recovery that come with a varicocelectomy.",
+      },
+      {
+        type: "p",
+        text:
+          "This guide walks through what a varicocele is, how embolization treats it, how it compares to surgery, and what to expect if you are considering it for pain, infertility, or simply wanting to avoid an operation.",
+      },
+      { type: "h2", text: "What Is a Varicocele?" },
+      {
+        type: "p",
+        text:
+          "A varicocele is essentially a varicose vein inside the scrotum. It develops when the valves inside the veins that carry blood away from the testicle stop working properly. Instead of blood flowing back toward the heart the way it should, it pools inside the vein, and over time that vein enlarges.",
+      },
+      {
+        type: "p",
+        text:
+          "Varicoceles affect roughly 10 to 15 percent of all men and show up most often between the ages of 15 and 35. Not every varicocele causes problems, but when it does cause symptoms, three things tend to show up.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A dull, aching pain in the testicle or scrotum, usually worse after standing, exercise, or by the end of the day",
+          "A visible or noticeable swelling, sometimes described as feeling like a bag of worms above the testicle",
+          "Reduced sperm quality or count, which is why varicocele is closely tied to male infertility",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Among couples struggling with infertility, close to 30 percent of the men involved have a varicocele. It is one of the few causes of male infertility that is actually treatable.",
+      },
+      { type: "h2", text: "What Is Varicocele Embolization?" },
+      {
+        type: "p",
+        text:
+          "Varicocele embolization is a minimally invasive procedure performed by an interventional radiologist. Instead of cutting into the scrotum to tie off or remove the affected veins, embolization closes the faulty vein from the inside using image guidance.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Local anesthetic and a mild sedative are given, with no general anesthesia involved.",
+          "A small nick is made, usually in the groin or wrist, and a thin catheter is guided through the blood vessels using real-time X-ray imaging.",
+          "Contrast dye is injected so the affected testicular vein can be seen clearly on screen.",
+          "Small coils and/or a sclerosing agent are placed inside the faulty vein to block it off.",
+          "Blood flow reroutes through healthy veins nearby, and the varicocele gradually shrinks and stops causing symptoms.",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "The entire procedure typically takes 45 minutes to an hour, and because it is outpatient, you go home the same day. There is no stitching required because the access point is small enough to close on its own.",
+      },
+      {
+        type: "rich-p",
+        content: [
+          "This same embolization technique is used across several conditions treated at IRCC Pakistan, including ",
+          {
+            type: "link",
+            text: "uterine fibroid embolization",
+            href: "/Uterine-Fibroid-Embolization",
+          },
+          " and ",
+          {
+            type: "link",
+            text: "prostate artery embolization",
+            href: "/Prostate-Artery-Embolization-for-Benign-Prostatic-Hyperplasia",
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Varicocele Treatment Without Surgery: How Embolization Compares to Surgery",
+      },
+      {
+        type: "ul",
+        items: [
+          "Anesthesia: surgery is typically done under general or spinal anesthesia, while embolization uses local anesthesia and light sedation.",
+          "Incision and scarring: surgery involves an incision and stitches, while embolization needs only a small needle access point.",
+          "Recovery time: surgical recovery can take two to four weeks, while most men return to light daily activities within one to two days after embolization.",
+          "Success rate: embolization has a success rate of around 90 percent, with a lower risk of complications such as hydrocele formation or damage to the testicular artery.",
+          "Specialist: surgery is done by a urologist, while embolization is performed by an interventional radiologist trained in image-guided vascular procedures.",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Some anatomical cases are better suited to a surgical approach, but for many men with a straightforward varicocele, embolization offers comparable results with considerably less disruption to daily life.",
+      },
+      {
+        type: "h2",
+        text: "Varicocele and Infertility: Does Embolization Actually Help?",
+      },
+      {
+        type: "p",
+        text:
+          "A varicocele raises the temperature around the testicle by a degree or two above normal, and sperm production is extremely sensitive to heat. That small temperature increase is enough to reduce both testosterone production and sperm quality.",
+      },
+      {
+        type: "p",
+        text:
+          "Once the affected vein is embolized and blood pooling stops, that temperature effect goes away, and for many men, sperm parameters start to recover. Improvements in sperm count and quality are typically seen around the three-month mark after treatment.",
+      },
+      {
+        type: "p",
+        text:
+          "Research on post-treatment pregnancy rates has found that somewhere between 30 and 50 percent of couples go on to conceive following varicocele embolization. Results vary, and a semen analysis plus scrotal ultrasound are needed to understand each case.",
+      },
+      { type: "h2", text: "Varicocele Pain Relief: What Changes After Embolization" },
+      {
+        type: "p",
+        text:
+          "Varicocele pain tends to build gradually over the course of a day, especially with standing, walking, lifting, or exercise. Because embolization closes off the vein responsible for pooling and pressure, pain relief often follows as the varicocele shrinks.",
+      },
+      {
+        type: "p",
+        text:
+          "Most patients notice a meaningful reduction in discomfort within days to a couple of weeks as swelling settles down. Mild soreness at the access site for a day or two is common and is usually managed with over-the-counter pain relief.",
+      },
+      { type: "h2", text: "Who Is a Good Candidate for Varicocele Embolization?" },
+      {
+        type: "ul",
+        items: [
+          "Adult men diagnosed with a varicocele, confirmed by physical exam and/or ultrasound",
+          "Men experiencing testicular pain, discomfort, or a visibly enlarged varicocele",
+          "Couples dealing with infertility where a varicocele has been identified as a contributing factor",
+          "Men who prefer to avoid general anesthesia, an incision, and a multi-week surgical recovery",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "The best way to confirm candidacy is a consultation that includes a scrotal Doppler ultrasound, which shows the size and severity of the varicocele.",
+      },
+      { type: "h2", text: "Recovery After Varicocele Embolization" },
+      {
+        type: "p",
+        text:
+          "Because there is no incision to heal, no muscle or tissue disruption, and no general anesthesia to recover from, most men are back to desk work and light activity within a day or two. Heavier physical activity is usually restricted for around a week to ten days.",
+      },
+      {
+        type: "p",
+        text:
+          "Recurrence is possible but uncommon, and when it happens, the rate is similar to what is seen after surgical repair. Follow-up is usually recommended to confirm the varicocele has resolved and to repeat semen analysis if infertility was part of the concern.",
+      },
+      { type: "h2", text: "Is Varicocele Embolization Right for You?" },
+      {
+        type: "rich-p",
+        content: [
+          "If a varicocele is causing pain, affecting fertility, or you have been told surgery is your only option, embolization is worth a serious look. ",
+          { type: "link", text: "Book a consultation", href: "/get-consultation" },
+          " with IRCC Pakistan for ultrasound review and a clear answer on your options.",
+        ],
+      },
+    ],
+  },
   {
     slug: "am-i-in-danger-if-i-dont-treat-my-varicose-veins",
     title: "Am I in Danger if I don't Treat My Varicose Veins?",

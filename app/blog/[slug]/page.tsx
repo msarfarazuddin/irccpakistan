@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BlogSection from "@/app/components/sections/BlogSection";
+import JsonLd from "@/app/components/seo/JsonLd";
 import type { BlogInlineSegment } from "@/app/data/blogPosts";
 import { formatBlogDate, getAllBlogPosts, getBlogPostBySlug } from "@/app/data/blogPosts";
 import { createPageMetadata } from "@/app/lib/metadata";
@@ -93,6 +94,7 @@ export default async function BlogPostPage({
 
   return (
     <>
+      {post.schema ? <JsonLd data={post.schema} id={`${post.slug}-schema`} /> : null}
       <article className="mt-[-100px] bg-white pt-30">
         <section className="mx-auto max-w-5xl px-4 pt-10 sm:px-6 lg:px-8">
           <Link href="/blog" className="text-sm font-semibold text-[#0E58A8]">
@@ -244,7 +246,7 @@ export default async function BlogPostPage({
           {post.faq?.length ? (
             <section id="faq" className="mt-12 scroll-mt-32">
               <h2 className="text-2xl font-semibold text-[#0B1220]">
-                Frequently Asked Questions About Fibroid Treatment
+                Frequently Asked Questions
               </h2>
               <div className="mt-6 space-y-6">
                 {post.faq.map((item) => (
