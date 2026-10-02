@@ -10,10 +10,12 @@ export const resolveSiteUrl = () => {
     process.env.SITE_URL ||
     process.env.VERCEL_PROJECT_PRODUCTION_URL ||
     process.env.VERCEL_URL ||
-    "https://www.irccpakistan.com";
+    "https://irccpakistan.com";
 
   const withProtocol = rawUrl.startsWith("http") ? rawUrl : `https://${rawUrl}`;
-  return withProtocol.replace(/\/+$/, "");
+  return withProtocol
+    .replace(/^https?:\/\/www\.irccpakistan\.com/i, "https://irccpakistan.com")
+    .replace(/\/+$/, "");
 };
 
 export const getBasePath = () => normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH);
