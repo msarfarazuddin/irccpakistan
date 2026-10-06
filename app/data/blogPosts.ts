@@ -2028,6 +2028,703 @@ const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "varicocele-treatment-cost-pakistan",
+    title: "How Much Does Vericocele Treatment Cost in Pakistan?",
+    date: "2026-10-06",
+    excerpt:
+      "Looking for varicocele treatment cost in Pakistan? Learn what can affect your quote, what to ask the clinic and how to plan your consultation.",
+    metaTitle: "Varicocele Treatment Cost in Pakistan: What Affects the Price?",
+    metaDescription:
+      "Looking for varicocele treatment cost in Pakistan? Learn what can affect your quote, what to ask the clinic and how to plan your consultation.",
+    image: "/Varicocele Treatment Cost in Pakistan.webp",
+    imageAlt: "Varicocele treatment cost in Pakistan",
+    author: "IRCC Pakistan",
+    readTime: "5 min read",
+    faq: [
+      {
+        question: "What is the varicocele treatment cost in Pakistan?",
+        answer:
+          "There is no single price for every patient. The cost depends on the recommended treatment and the items included in the estimate. IRCC Pakistan does not publish a fixed price range, so contact the clinic for information about your case.",
+      },
+      {
+        question: "What can affect the cost of varicocele treatment?",
+        answer:
+          "The consultation, any required tests, the recommended treatment, procedure-related charges and follow-up arrangements may affect the total. Ask the clinic which of these apply to your estimate.",
+      },
+      {
+        question: "Is varicocele embolization always cheaper than surgery?",
+        answer:
+          "Not necessarily. These are different procedures, and their costs depend on the patient's needs and what the provider includes. Ask for a clear, case-specific estimate before comparing options.",
+      },
+      {
+        question: "Can I get an exact quote before an assessment?",
+        answer:
+          "The clinic may need to review your symptoms, examination and relevant reports before giving you an estimate for a recommended treatment. Contact the team to ask what information to bring.",
+      },
+      {
+        question: "Does a varicocele always need treatment?",
+        answer:
+          "No. Whether treatment is appropriate depends on your individual situation. Discuss your symptoms and concerns with a qualified doctor.",
+      },
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://irccpakistan.com/blog/varicocele-treatment-cost-pakistan#article",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://irccpakistan.com/blog/varicocele-treatment-cost-pakistan",
+          },
+          headline: "Varicocele Treatment Cost in Pakistan: What Affects the Price?",
+          description:
+            "Looking for varicocele treatment cost in Pakistan? Learn what can affect your quote, what to ask the clinic and how to plan your consultation.",
+          inLanguage: "en-PK",
+          articleSection: "Patient Guide",
+          keywords: [
+            "varicocele treatment cost in Pakistan",
+            "varicocele embolization cost in Pakistan",
+            "varicocele surgery cost in Pakistan",
+            "varicocele treatment price",
+          ],
+          about: { "@type": "MedicalCondition", name: "Varicocele" },
+          author: { "@id": "https://irccpakistan.com/#organization" },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://irccpakistan.com/blog/varicocele-treatment-cost-pakistan#faq",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is the varicocele treatment cost in Pakistan?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "There is no single price for every patient. The cost depends on the recommended treatment and the items included in the estimate. IRCC Pakistan does not publish a fixed price range, so contact the clinic for information about your case.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What can affect the cost of varicocele treatment?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "The consultation, any required tests, the recommended treatment, procedure-related charges and follow-up arrangements may affect the total. Ask the clinic which of these apply to your estimate.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is varicocele embolization always cheaper than surgery?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "Not necessarily. These are different procedures, and their costs depend on the patient's needs and what the provider includes. Ask for a clear, case-specific estimate before comparing options.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can I get an exact quote before an assessment?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "The clinic may need to review your symptoms, examination and relevant reports before giving you an estimate for a recommended treatment. Contact the team to ask what information to bring.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does a varicocele always need treatment?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "No. Whether treatment is appropriate depends on your individual situation. Discuss your symptoms and concerns with a qualified doctor.",
+              },
+            },
+          ],
+        },
+      ],
+    },
+    content: [
+      {
+        type: "p",
+        text:
+          "If you are looking into varicocele treatment, it is natural to ask about the cost before deciding what to do. The honest answer is that there is no single price that applies to every patient. The final quote can depend on your assessment, the recommended treatment and what is included in your care.",
+      },
+      {
+        type: "p",
+        text:
+          "IRCC Pakistan does not publish a fixed price range for varicocele treatment. The team can explain the expected cost after reviewing your case and discussing whether treatment is appropriate for you.",
+      },
+      { type: "h2", text: "Why does varicocele treatment cost vary?" },
+      {
+        type: "p",
+        text:
+          "Two people with the same diagnosis may not need the same care. A doctor first needs to understand your symptoms, examination findings and any relevant test results before recommending a treatment.",
+      },
+      { type: "p", text: "When you request a quote, ask whether these items affect the total:" },
+      {
+        type: "ul",
+        items: [
+          "Consultation and assessment: Ask if the initial consultation is included or charged separately.",
+          "Tests or imaging: Find out whether any scans, blood tests or other investigations are needed, and whether their cost is separate.",
+          "Recommended treatment: Varicocele can be treated in different ways. The expected cost may depend on which option is suitable for you.",
+          "Procedure materials and facility charges: Ask which procedure-related items and facility costs are included in the estimate.",
+          "Follow-up care: Check whether follow-up visits or any recommended tests after treatment are part of the quoted amount.",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "These are useful questions to ask not a checklist of charges that every patient will have. Your care team can confirm which ones apply to you.",
+      },
+      { type: "h2", text: "Is the cost of embolization different from surgery?" },
+      {
+        type: "p",
+        text:
+          "Varicocele embolization and surgery are different procedures, so their costs may be worked out differently. The total can depend on the treatment recommended for your case and on what each provider includes in its quote.",
+      },
+      {
+        type: "p",
+        text:
+          "It is not safe to assume that one option will always cost less. When comparing estimates, ask what is included, whether tests or follow-up visits are extra, and whether the recommended procedure is suitable for your condition. Your doctor can explain the options and their possible benefits and risks.",
+      },
+      {
+        type: "rich-p",
+        content: [
+          "Read our guide to ",
+          { type: "link", text: "varicocele embolization", href: "/blog/varicocele-embolization-pakistan-non-surgical-guide" },
+          " to learn how the procedure works. For information about the treatment available at IRCC Pakistan, visit the ",
+          { type: "link", text: "Varicocele Embolization service page", href: "/Varicocele-Embolization" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "What should I ask before accepting a quote?" },
+      {
+        type: "p",
+        text: "A clear quote should help you understand what happens next. Before making a decision, consider asking:",
+      },
+      {
+        type: "ul",
+        items: [
+          "What treatment do you recommend for my case, and why?",
+          "Does the estimate include the consultation, tests and procedure?",
+          "Are any materials or facility charges billed separately?",
+          "Are follow-up appointments or tests included?",
+          "Could my final cost change after the assessment? If so, what might cause it?",
+          "What should I bring to my consultation?",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "If you have already had an ultrasound or other investigations, ask whether to bring the reports. The clinic can tell you what information is useful for your appointment.",
+      },
+      { type: "h2", text: "Does every varicocele need treatment?" },
+      {
+        type: "p",
+        text:
+          "No. A varicocele does not automatically mean that a procedure is needed. The decision depends on your symptoms, examination and personal health situation. If you are being assessed for fertility concerns, your doctor may also consider relevant test results and your wider circumstances.",
+      },
+      {
+        type: "p",
+        text:
+          "A consultation is a chance to understand your options and ask questions. It does not mean you have to choose a procedure straight away.",
+      },
+      { type: "h2", text: "How can I ask IRCC Pakistan about the cost?" },
+      {
+        type: "p",
+        text:
+          "Contact the clinic to request an assessment and ask which details are needed to prepare an estimate. The team can explain the next steps and what is included in the quote for your case.",
+      },
+      {
+        type: "rich-p",
+        content: [
+          "You can ",
+          { type: "link", text: "request a consultation", href: "/get-consultation" },
+          " or ",
+          { type: "link", text: "contact IRCC Pakistan", href: "/Contact" },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "varicose-vein-treatment-cost-pakistan",
+    title: "How Much Does Varicose Vein Treatment Cost in Pakistan?",
+    date: "2026-10-06",
+    excerpt:
+      "Learn what may affect varicose vein treatment cost in Pakistan, what to ask about laser or RFA quotes, and how to request an estimate.",
+    metaTitle: "Varicose Vein Treatment Cost in Pakistan: What to Ask",
+    metaDescription:
+      "Learn what may affect varicose vein treatment cost in Pakistan, what to ask about laser or RFA quotes, and how to request an estimate.",
+    image: "/Varicose Vein Treatment Cost Guide.webp",
+    imageAlt: "Varicose vein treatment cost in Pakistan",
+    author: "IRCC Pakistan",
+    readTime: "5 min read",
+    faq: [
+      {
+        question: "What is the varicose vein treatment cost in Pakistan?",
+        answer:
+          "There is no single price for every patient. The estimate depends on the treatment recommended and what the provider includes. IRCC Pakistan does not publish a fixed price range, so contact the clinic to ask about your case.",
+      },
+      {
+        question: "How much does laser treatment for varicose veins cost in Pakistan?",
+        answer:
+          "The cost can vary by provider and treatment plan. Ask whether the estimate includes assessment, tests, procedure-related charges and follow-up care.",
+      },
+      {
+        question: "Is radiofrequency ablation cheaper than laser treatment?",
+        answer:
+          "Not necessarily. Prices depend on the provider, the recommended treatment and what is included in the estimate. Ask the clinic for a clear, case-specific breakdown.",
+      },
+      {
+        question: "What should I ask before accepting a treatment quote?",
+        answer:
+          "Ask which treatment is recommended, what the quoted amount covers, whether tests or follow-up are extra, and whether the estimate could change after assessment.",
+      },
+      {
+        question: "Can I get an exact price before a consultation?",
+        answer:
+          "The clinic may need to understand your symptoms and review relevant reports before discussing an estimate. Contact the team to ask what information is needed.",
+      },
+      {
+        question: "Is varicose vein treatment always necessary?",
+        answer:
+          "Not every person with varicose veins needs a procedure. A qualified doctor can assess your symptoms and discuss whether treatment or another approach is appropriate for you.",
+      },
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://irccpakistan.com/blog/varicose-vein-treatment-cost-pakistan#article",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://irccpakistan.com/blog/varicose-vein-treatment-cost-pakistan",
+          },
+          headline: "How Much Does Varicose Vein Treatment Cost in Pakistan?",
+          description:
+            "Learn what may affect varicose vein treatment cost in Pakistan, what to ask about laser or RFA quotes, and how to request an estimate.",
+          inLanguage: "en-PK",
+          articleSection: "Patient Guide",
+          keywords: [
+            "varicose vein treatment cost in Pakistan",
+            "varicose veins laser treatment cost in Pakistan",
+            "varicose vein surgery cost in Pakistan",
+            "varicose vein treatment price",
+          ],
+          about: { "@type": "MedicalCondition", name: "Varicose veins" },
+          author: { "@id": "https://irccpakistan.com/#organization" },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://irccpakistan.com/blog/varicose-vein-treatment-cost-pakistan#faq",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is the varicose vein treatment cost in Pakistan?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "There is no single price for every patient. The estimate depends on the treatment recommended and what the provider includes. IRCC Pakistan does not publish a fixed price range, so contact the clinic to ask about your case.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How much does laser treatment for varicose veins cost in Pakistan?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "The cost can vary by provider and treatment plan. Ask whether the estimate includes assessment, tests, procedure-related charges and follow-up care.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is radiofrequency ablation cheaper than laser treatment?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "Not necessarily. Prices depend on the provider, the recommended treatment and what is included in the estimate. Ask the clinic for a clear, case-specific breakdown.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What should I ask before accepting a treatment quote?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "Ask which treatment is recommended, what the quoted amount covers, whether tests or follow-up are extra, and whether the estimate could change after assessment.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can I get an exact price before a consultation?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "The clinic may need to understand your symptoms and review relevant reports before discussing an estimate. Contact the team to ask what information is needed.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is varicose vein treatment always necessary?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "Not every person with varicose veins needs a procedure. A qualified doctor can assess your symptoms and discuss whether treatment or another approach is appropriate for you.",
+              },
+            },
+          ],
+        },
+      ],
+    },
+    content: [
+      {
+        type: "p",
+        text:
+          "The cost of varicose vein treatment in Pakistan depends on the treatment recommended for you and what is included in your estimate. IRCC Pakistan does not publish a fixed price range, so the clinic will need to discuss your case before confirming a quote.",
+      },
+      {
+        type: "p",
+        text:
+          "If you are comparing laser treatment, radiofrequency ablation or surgery, ask each provider for a clear breakdown. A quoted price is easier to compare when you know exactly what it covers.",
+      },
+      { type: "h2", text: "What can affect the cost of varicose vein treatment?" },
+      {
+        type: "p",
+        text:
+          "There is no single treatment plan for everyone. Your doctor may consider your symptoms, the veins involved and the results of any assessment or imaging before discussing suitable options.",
+      },
+      {
+        type: "p",
+        text: "Depending on your case and the clinic's billing, an estimate may take into account:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Consultation and assessment: Ask whether the initial appointment is included or billed separately.",
+          "Ultrasound or other tests: Confirm whether imaging or tests are needed and whether they are part of the quote.",
+          "Recommended procedure: The estimate may differ depending on the treatment advised for your veins.",
+          "Procedure-related charges: Ask whether the facility, equipment, medicines or other procedure-related items are included.",
+          "Follow-up care: Check whether follow-up visits or any recommended checks are included or charged separately.",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "These are questions to ask not charges that apply to every patient. The clinic can confirm which items are relevant to your estimate.",
+      },
+      { type: "h2", text: "Does laser treatment cost more than radiofrequency ablation?" },
+      {
+        type: "p",
+        text:
+          "There is no reliable answer that applies to every clinic or patient. Laser treatment, radiofrequency ablation (RFA) and other approaches may have different charges, and the total depends on the treatment plan and what the provider includes.",
+      },
+      { type: "p", text: "When comparing quotes, ask:" },
+      {
+        type: "ul",
+        items: [
+          "Which treatment is being recommended for my case?",
+          "What does the quoted amount include?",
+          "Are tests, medicines or follow-up visits extra?",
+          "Could the estimate change after assessment?",
+          "Who should I contact if I have questions about the quote?",
+        ],
+      },
+      {
+        type: "rich-p",
+        content: [
+          "IRCC Pakistan's ",
+          { type: "link", text: "varicose vein treatment page", href: "/Varicose-Vein-Ablation" },
+          " describes endovenous laser therapy, radiofrequency ablation and non-thermal approaches. Ask the clinic which options are currently available and whether any are suitable for you.",
+        ],
+      },
+      { type: "h2", text: "How do I compare treatment quotes?" },
+      {
+        type: "p",
+        text:
+          "The lowest quote may not cover the same services as another provider's estimate. Before comparing prices, check whether both estimates include the same things, such as assessment, tests, procedure related charges and follow-up.",
+      },
+      {
+        type: "p",
+        text:
+          "It is also reasonable to ask the doctor to explain why a particular option is being considered and whether there are alternatives. The right choice depends on your individual assessment; a price comparison alone cannot tell you which treatment is appropriate.",
+      },
+      { type: "h2", text: "What should I bring when asking for an estimate?" },
+      { type: "p", text: "The clinic can tell you what it needs, but it may be helpful to have:" },
+      {
+        type: "ul",
+        items: [
+          "Any previous ultrasound or scan reports",
+          "A list of symptoms and when they started",
+          "Details of previous treatment, if any",
+          "Questions about the estimate and what it includes",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "Do not arrange tests just to get a quote unless the clinic or your doctor advises you to do so.",
+      },
+      { type: "h2", text: "How can I ask IRCC Pakistan about the cost?" },
+      {
+        type: "p",
+        text:
+          "Contact the clinic to ask about an assessment and what information to bring. After reviewing your case, the team can explain the next steps and discuss the estimate with you.",
+      },
+      {
+        type: "rich-p",
+        content: [
+          "You can ",
+          { type: "link", text: "request a consultation", href: "/get-consultation" },
+          " or ",
+          { type: "link", text: "contact IRCC Pakistan", href: "/Contact" },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "uterine-fibroid-treatment-cost-pakistan",
+    title: "What Affects the Cost of Uterine Fibroid Treatment in Pakistan?",
+    date: "2026-10-06",
+    excerpt:
+      "Learn what may affect uterine fibroid treatment cost in Pakistan, what to ask about tests and follow-up, and how to request a case-specific estimate.",
+    metaTitle: "Uterine Fibroid Treatment Cost in Pakistan: What Affects It?",
+    metaDescription:
+      "Learn what may affect uterine fibroid treatment cost in Pakistan, what to ask about tests and follow-up, and how to request a case-specific estimate.",
+    image: "/IRCC Pakistan Fibroid Treatment Cost Guide.webp",
+    imageAlt: "Uterine fibroid treatment cost in Pakistan",
+    author: "IRCC Pakistan",
+    readTime: "6 min read",
+    faq: [
+      {
+        question: "What is the cost of uterine fibroid treatment in Pakistan?",
+        answer:
+          "There is no single price for every patient. The estimate depends on the treatment being considered and what the provider includes. IRCC Pakistan does not publish a fixed price range, so contact the clinic to ask about your case.",
+      },
+      {
+        question: "Does a fibroid treatment estimate include scans and tests?",
+        answer:
+          "That depends on the provider and the estimate. Ask whether any required imaging or tests are included or charged separately.",
+      },
+      {
+        question: "Can I get an estimate before a consultation?",
+        answer:
+          "The clinic may need to review your symptoms and relevant reports before discussing an estimate for your case. Contact the team to ask what information to bring.",
+      },
+      {
+        question: "What should I compare when looking at fibroid treatment quotes?",
+        answer:
+          "Ask what each estimate includes, whether tests or follow-up are extra, and which treatment plan the quote relates to. A clear breakdown makes estimates easier to compare.",
+      },
+      {
+        question: "Do all uterine fibroids need treatment?",
+        answer:
+          "No. Some fibroids may not require treatment, while others may need further assessment. A qualified clinician can discuss what is appropriate for your situation.",
+      },
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://irccpakistan.com/blog/uterine-fibroid-treatment-cost-pakistan#article",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": "https://irccpakistan.com/blog/uterine-fibroid-treatment-cost-pakistan",
+          },
+          headline: "What Affects the Cost of Uterine Fibroid Treatment in Pakistan?",
+          description:
+            "Learn what may affect uterine fibroid treatment cost in Pakistan, what to ask about tests and follow-up, and how to request a case-specific estimate.",
+          inLanguage: "en-PK",
+          articleSection: "Patient Guide",
+          keywords: [
+            "uterine fibroid treatment cost in Pakistan",
+            "UFE cost in Pakistan",
+            "fibroid treatment price",
+            "uterine fibroid embolization cost",
+          ],
+          about: { "@type": "MedicalCondition", name: "Uterine fibroids" },
+          author: { "@id": "https://irccpakistan.com/#organization" },
+          publisher: { "@id": "https://irccpakistan.com/#organization" },
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://irccpakistan.com/blog/uterine-fibroid-treatment-cost-pakistan#faq",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What is the cost of uterine fibroid treatment in Pakistan?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "There is no single price for every patient. The estimate depends on the treatment being considered and what the provider includes. IRCC Pakistan does not publish a fixed price range, so contact the clinic to ask about your case.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does a fibroid treatment estimate include scans and tests?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "That depends on the provider and the estimate. Ask whether any required imaging or tests are included or charged separately.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can I get an estimate before a consultation?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "The clinic may need to review your symptoms and relevant reports before discussing an estimate for your case. Contact the team to ask what information to bring.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What should I compare when looking at fibroid treatment quotes?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "Ask what each estimate includes, whether tests or follow-up are extra, and which treatment plan the quote relates to. A clear breakdown makes estimates easier to compare.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do all uterine fibroids need treatment?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text:
+                  "No. Some fibroids may not require treatment, while others may need further assessment. A qualified clinician can discuss what is appropriate for your situation.",
+              },
+            },
+          ],
+        },
+      ],
+    },
+    content: [
+      {
+        type: "p",
+        text:
+          "Being told that you have uterine fibroids can bring up many questions. What does the diagnosis mean? Do you need treatment? And, if you do, what might it cost?",
+      },
+      {
+        type: "p",
+        text:
+          "There is no single price that applies to every patient. The estimate depends on your individual assessment, the treatment being considered and what the provider includes in its quote. IRCC Pakistan does not publish a fixed price range, so the clinic needs to discuss your case before confirming an estimate.",
+      },
+      {
+        type: "p",
+        text: "This guide explains what to ask when you are comparing options, without guessing at a price.",
+      },
+      { type: "h2", text: "Uterine Fibroid Treatment" },
+      {
+        type: "p",
+        text:
+          "Not every fibroid needs treatment. Some do not cause noticeable symptoms, while others may be linked with heavy periods, pelvic pressure, pain or other concerns. A doctor considers your symptoms, test results and personal circumstances before discussing whether treatment is needed.",
+      },
+      {
+        type: "p",
+        text:
+          "Treatment options can differ. Depending on your situation, a clinician may discuss monitoring, medicines or a procedure. If a procedure is being considered, the estimate will depend on the specific plan recommended for you. A cost you see online or a quote given to another patient may not reflect your own case.",
+      },
+      {
+        type: "p",
+        text:
+          "If you have been advised to consider treatment, ask your doctor to explain the reason for the recommendation and whether there are other options to discuss. If pregnancy is part of your plans, mention that early in the conversation.",
+      },
+      { type: "h2", text: "Why can fibroid treatment costs vary?" },
+      {
+        type: "p",
+        text: "A quote can depend on several parts of your care. Ask the clinic which of these apply to your estimate:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Consultation and assessment: Is the first appointment included or billed separately?",
+          "Imaging and tests: Are scans or other tests needed? If so, are they included in the estimate?",
+          "Recommended treatment: Is the quote for the specific option advised after reviewing your case?",
+          "Procedure-related charges: Does the estimate include the facility and other charges connected with the procedure?",
+          "Medicines or care around the procedure: Are any medicines or related services charged separately?",
+          "Follow-up: Are follow-up visits or recommended checks included?",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "These are questions to ask; they are not charges that necessarily apply to every patient. The clinic can tell you what is relevant to your care.",
+      },
+      { type: "h2", text: "What should I ask when requesting an estimate?" },
+      {
+        type: "p",
+        text:
+          "A clear estimate should help you understand what is included and what might be billed separately. You can ask:",
+      },
+      {
+        type: "ul",
+        items: [
+          "What reports or information do you need to review my case?",
+          "What services are included in the estimate?",
+          "Are tests, medicines or follow-up visits extra?",
+          "Is the estimate based on a treatment plan already recommended for me?",
+          "Could the estimate change after my assessment? If so, why?",
+          "Who should I contact if I have questions about the quote?",
+        ],
+      },
+      {
+        type: "p",
+        text:
+          "If you already have ultrasound or MRI reports, ask whether to bring them. Do not arrange new tests just to get an estimate unless your doctor or the clinic advises you to.",
+      },
+      { type: "h2", text: "How should I compare treatment estimates?" },
+      {
+        type: "p",
+        text:
+          "It can be tempting to compare only the final numbers, but two estimates may cover different things. One may include assessment or follow-up, while another may list those separately. Before deciding, check whether you are comparing the same services and a treatment plan that has been discussed for your case.",
+      },
+      {
+        type: "p",
+        text:
+          "It is also reasonable to ask the doctor to explain the purpose of a recommended option, its possible risks and what other approaches may be relevant. Cost is important, but a price comparison alone cannot tell you which treatment is medically suitable.",
+      },
+      {
+        type: "rich-p",
+        content: [
+          "For an overview of uterine fibroid embolization, read our ",
+          { type: "link", text: "complete UFE guide", href: "/blog/uterine-fibroid-embolization-pakistan-complete-guide" },
+          ". For information about the service offered at IRCC Pakistan, visit the ",
+          { type: "link", text: "Uterine Fibroid Embolization page", href: "/Uterine-Fibroid-Embolization" },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Does every patient with fibroids need treatment?" },
+      {
+        type: "p",
+        text:
+          "No. The right next step depends on symptoms, test results and individual circumstances. A doctor can help you understand whether monitoring or treatment should be discussed.",
+      },
+      {
+        type: "p",
+        text:
+          "If you have heavy bleeding, pain or pressure, explain how these symptoms affect your daily life. If you are concerned about fertility or planning a pregnancy, mention that too. These details help make the consultation more useful, but only a clinician can advise you about your own diagnosis and options.",
+      },
+      { type: "h2", text: "How can I ask IRCC Pakistan about the cost?" },
+      {
+        type: "rich-p",
+        content: [
+          "You can ",
+          { type: "link", text: "request a consultation", href: "/get-consultation" },
+          " or ",
+          { type: "link", text: "contact IRCC Pakistan", href: "/Contact" },
+          " to ask what information the clinic needs. The team can explain the next steps and discuss an estimate after reviewing your case.",
+        ],
+      },
+    ],
+  },
 ];
 
 const toTimestamp = (date: string) => {
