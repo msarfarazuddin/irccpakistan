@@ -97,7 +97,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/public/:path*",
+        source: "/:path*.(png|jpg|jpeg|webp|avif|svg|mp4|woff|woff2|otf)",
         headers: [
           {
             key: "Cache-Control",
