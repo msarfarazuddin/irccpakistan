@@ -22,7 +22,7 @@ function renderInlineContent(segments: BlogInlineSegment[], keyPrefix: string) {
           key={key}
           href={segment.href}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           className="font-medium text-[#0E58A8] underline decoration-[#0E58A8]/30 underline-offset-4 transition hover:decoration-[#0E58A8]"
         >
           {segment.text}
