@@ -1,3 +1,5 @@
+import gulfBlogPosts from "./gulfBlogPosts";
+
 export type BlogLinkSegment = {
   type: "link";
   text: string;
@@ -38,6 +40,7 @@ export type BlogPost = {
 };
 
 const blogPosts: BlogPost[] = [
+  ...gulfBlogPosts,
   {
     slug: "uterine-fibroid-embolization-pakistan-complete-guide",
     title: "Uterine Fibroid Embolization in Pakistan: The Complete Non-Surgical Guide",
